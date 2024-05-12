@@ -14,6 +14,7 @@
 }
 
 body {
+  margin: 0;
   background: linear-gradient(to bottom, #ffffff, #adddff, #adddff);
 }
 
@@ -30,7 +31,7 @@ main h1 {
 }
 
 #docker-logo:hover {
-  width: 21%;
+  width: 23%;
   transition: width 0.3s ease;
   cursor: pointer;
 }
@@ -70,6 +71,7 @@ strong {
   background-color: #d1ecff;
   margin: 20px;
   margin-top: 1px;
+  border-radius: 20px;
 
   padding: 40px;
   border: 1px solid #198ce0;
@@ -82,7 +84,10 @@ strong {
 .titulo-topicos {
   width: 50%;
   text-align: center;
-
+  border-radius: 20px;
+  user-select: none;
+  cursor: pointer;
+  margin: 0 auto;
   background-color: white;
   border: 1px solid #198ce0;
   padding: 10px 25px;
@@ -98,7 +103,7 @@ strong {
 
 #engrenagemicon {
   position: relative;
-  top: 25px;
+  top: 10px;
   margin: 0px 5px;
   width: 40px;
 }
@@ -139,4 +144,96 @@ li {
   z-index: -1;
   bottom: 0;
   opacity: 0.8;
+}
+
+.vocabulario-aprendido {
+  background-color: #198ce0;
+  color: white;
+  width: 50%;
+  padding: 20px;
+  border: 1px solid #adddff;
+  border-radius: 20px;
+}
+
+.vocabulario-aprendido div {
+  margin-bottom: 15px;
+}
+
+.vocabulario-aprendido h2 {
+  display: inline;
+  font-family: "Poppins-bold";
+}
+
+.vocabulario-aprendido ul {
+  color: #adddff;
+  font-family: "Poppins-bold";
+  font-size: 20px;
+}
+
+.vocabulario-aprendido ul li {
+  margin-bottom: 10px;
+}
+.vocabulario-aprendido ul li:hover {
+  margin-bottom: 10px;
+  color: white;
+  transition: color 0.5s ease;
+  cursor: pointer;
+}
+
+.vocabulario-aprendido ul li:not(hover) {
+  margin-bottom: 10px;
+  color: #adddff;
+  transition: color 0.2s ease;
+  font-size: 20px;
+}
+
+.vocabulario-aprendido ul p {
+  font-family: "Jua";
+  font-size: 24px;
+}
+
+#abc-icon {
+  position: relative;
+  top: 10px;
+  margin: 0px 5px;
+
+  width: 40px;
+}
+
+.fade-in {
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+}
+
+#representacoes-ambientes {
+  margin-top: 20px;
+  display: flex;
+}
+
+#representacoes-ambientes img {
+  width: 50%;
+}
+
+footer {
+  margin: 0;
+  margin-top: 20px;
+  background-color: #198ce0;
+  color: #ffffff;
+  font-family: "Jua";
+  text-align: center;
+  font-size: 24px;
+  padding: 5px;
+}
+
+header {
+  font-family: "Jua";
+  color: #ffffff;
+  background-color: #198ce0;
+  padding: 1px;
+  text-align: center;
+  font-size: 24px;
+}
+
+header span {
+  color: #adddff;
 }
