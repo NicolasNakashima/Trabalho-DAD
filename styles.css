@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "Jua";
+  src: url(Jua-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-regular";
+  src: url(Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-bold";
+  src: url(Poppins/Poppins-Bold.ttf);
+}
+
+body {
+  background: linear-gradient(to bottom, #ffffff, #adddff, #adddff);
+}
+
+main h1 {
+  color: #004779;
+}
+
+#docker-logo {
+  width: 20%;
+}
+
+#godocker {
+  width: 40%;
+}
+
+#docker-logo:hover {
+  width: 21%;
+  transition: width 0.3s ease;
+  cursor: pointer;
+}
+
+#docker-logo:not(:hover) {
+  transition: width 0.3s ease;
+  width: 20%;
+}
+
+#docker-icon-topic {
+  position: relative;
+  top: 7px;
+  margin: 0px 5px;
+  width: 40px;
+}
+
+#aplicacao-exemplo {
+  margin: 20px 0;
+  width: 80%;
+}
+
+main {
+  font-family: "Poppins-regular";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #212121;
+}
+
+strong {
+  font-family: "Poppins-bold";
+  color: #198ce0;
+}
+
+.conteudo-box {
+  width: 50%;
+  background-color: #d1ecff;
+  margin: 20px;
+  margin-top: 1px;
+
+  padding: 40px;
+  border: 1px solid #198ce0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 1px 10px rgba(0, 71, 121, 0.3);
+}
+
+.titulo-topicos {
+  width: 50%;
+  text-align: center;
+
+  background-color: white;
+  border: 1px solid #198ce0;
+  padding: 10px 25px;
+  box-shadow: 1px 1px 10px rgba(0, 71, 121, 0.3);
+}
+
+.titulo-topicos h1 {
+  font-size: 28px;
+  font-family: "Poppins-bold";
+  color: #198ce0;
+  display: inline-block;
+}
+
+#engrenagemicon {
+  position: relative;
+  top: 25px;
+  margin: 0px 5px;
+  width: 40px;
+}
+
+.conteudo-box div {
+  display: block;
+}
+
+.invisivel {
+  display: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li p {
+  display: inline;
+}
+li {
+  margin-bottom: 20px;
+}
+
+/* #wavetest{
+    width: 100%;
+    position: absolute;
+    top: 200%;
+    opacity: 0.4;
+    z-index: -1;
+} */
+
+#ocean {
+  height: 50%;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  bottom: 0;
+  opacity: 0.8;
+}
