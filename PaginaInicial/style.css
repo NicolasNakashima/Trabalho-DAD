@@ -26,13 +26,29 @@ header{
     cursor: pointer;
 }
 .opcoes{
-    left: -204px;
+    left: -20px;
     top: 100px;
-    padding: 16px;
+    width: 200px;
+    text-align: justify;
+    height: min-content;
     position: fixed;
-    background-color: red;
+    background-color: rgb(255, 255, 255);
     transition: 1s;
 }
 .escondido{
-    left: 0;
+    left: -204px;
+}
+.opcoes ul{
+    list-style: none;
+}
+.opcoes li{
+    border: 2px dotted black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.opcoes li:hover{
+    background-color: #198CE066;
 }
