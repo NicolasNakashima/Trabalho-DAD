@@ -1,24 +1,27 @@
 @font-face {
-    font-family: "Jua";
-    src: url("../Jua-Regular.ttf") format("truetype");
+  font-family: "Jua";
+  src: url("../Jua-Regular.ttf") format("truetype");
 }
-
 @font-face {
-    font-family: "Poppins";
-    src: url("../Poppins/Poppins-Regular.ttf") format("truetype");
+  font-family: "Poppins";
+  src: url("../Poppins/Poppins-Regular.ttf") format("truetype");
 }
-
-
 * {
-    font-family: Poppins;
+  font-family: Poppins;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 #headerGoDocker {
-    height: 80px;
-    background-color: #198CE0;
+  height: 80px;
+  background-color: #198CE0;
 }
+#headerGoDocker ul {
+  list-style-type: none;
+}
+#headerGoDocker ul li {
+  display: inline;
+}/*# sourceMappingURL=styles.css.map */
