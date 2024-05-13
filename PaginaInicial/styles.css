@@ -1,44 +1,42 @@
 @font-face {
-    font-family: "Jua";
-    src: url("../Jua-Regular.ttf") format("truetype");
+  font-family: "Jua";
+  src: url("../Jua-Regular.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Poppins";
-    src: url("../Poppins/Poppins-Regular.ttf") format("truetype");
+  font-family: "Poppins";
+  src: url("../Poppins/Poppins-Regular.ttf") format("truetype");
 }
 
-
 * {
-    font-family: Poppins;
+  font-family: Poppins;
 }
 
 main {
-    margin-left: 100px;
+  margin-left: 100px;
 }
 
 div.box-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 #slogan {
-    display: inline;
-} 
-
-.btnComece {
-    display: inline-block;
-    background-color: #198CE0;
-    color: #FFF;
-    border: none;
-    padding: 15px 30px ;
-    border-radius: 15px;
+  display: inline;
 }
 
+.btnComece {
+  display: inline-block;
+  background-color: #198ce0;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 15px;
+}
 
 img#logo-godocker {
-    display: inline-block;
-    width: 40vw;
+  display: inline-block;
+  width: 40vw;
 }

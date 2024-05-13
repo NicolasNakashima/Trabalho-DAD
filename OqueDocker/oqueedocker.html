@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>O que é docker?</title>
+
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="/assets/img/godocker.svg"
+      type="image/x-icon"
+    />
+    <script src="oqueedocker.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <p>G<span>o</span>D<span>o</span>cker!</p>
+    </header>
+    <main>
+      <h1>1. O que é Docker?</h1>
+
+      <img id="docker-logo" src="/assets/img/docker-logo.png" alt="" />
+
+      <div class="titulo-topicos" id="visao-geral-titulo">
+        <h1>Visão geral</h1>
+        <img id="engrenagemicon" src="/assets/img/engrenagemicon.png" alt="" />
+      </div>
+
+      <article id="visao-geral-conteudo" class="conteudo-box invisivel">
+        <p>
+          Essa amigável baleia que carrega alguns contêineres, representa uma
+          das mais importantes ferramentas para o desenvolvimento e criação de
+          aplicações profissionais!
+        </p>
+
+        <p>
+          O Docker é uma ferramenta que foi desenvolvida em 2013 e desenvolvida
+          pela cooperativa Docker, e foi escrito na linguagem de programação
+          GoLang! - Inspiração do nome do site ;).
+        </p>
+
+        <p>
+          É uma ferramenta que tornou-se mundialmente conhecida devido à sua
+          capacidade de simplificar e agilizar o processo de desenvolvimento,
+          distribuição e execução de aplicações, através da
+          <strong>virtualização de contêineres</strong> - Conceito que
+          exploraremos bastante!
+        </p>
+
+        <p>
+          Essa tecnologia revolucionou a forma como os desenvolvedores criam e
+          implantam software, permitindo <strong>portabilidade</strong>,
+          <strong>escalabilidade</strong> e <strong>consistência</strong>. Sua
+          eficiência e versatilidade tornaram-no essencial na moderna
+          infraestrutura de TI.
+        </p>
+
+        <img id="godocker" src="/assets/img/godocker.svg" alt="godocker!" />
+      </article>
+
+      <div id="oqueedocker-titulo" class="titulo-topicos">
+        <h1>O que é Docker?</h1>
+        <img
+          id="docker-icon-topic"
+          src="/assets/img/docker-icon-topic.png"
+          alt="Logo do Docker"
+        />
+      </div>
+
+      <article id="oqueedocker-conteudo" class="conteudo-box invisivel">
+        <p>
+          Para entendermos o conceito de Docker e sua importância, vamos
+          entender as partes que compõe uma aplicação, o principal instrumento
+          que o Docker manuseia:
+        </p>
+
+        <img
+          id="aplicacao-exemplo"
+          src="/assets/img/aplicacao-exemplo.png"
+          alt="Exemplo de aplicação"
+        />
+
+        <p>
+          Basicamente, a função do Docker é ajudar a encapsular ou empacotar
+          essa aplicação com todas as partes necessárias que a faça funcionar,
+          tornando a implementação e a execução que você deseja mais fácil e
+          portável, fazendo com que funcione em qualquer ambiente da computação.
+        </p>
+
+        <p>
+          Ao <strong>virtualizar um ambiente</strong> no Docker, você pode
+          facilmente acessá-lo em qualquer sistema computacional em que esteja,
+          com diversas vantagens que otimizarão a sua aplicação:
+        </p>
+
+        <ul>
+          <li>
+            <strong>Eficiência de Recursos</strong>
+            <p>
+              : O Docker compartilha o kernel do sistema operacional local entre
+              todas as virtualizações (os <strong>CONTÊINERES</strong>)
+              presentes em sua aplicação. Compartilhando este recurso comum,
+              essas virtualizações se tornam mais leves, o que resulta em uma
+              utilização mais eficiente dos recursos e do sistema.
+            </p>
+          </li>
+
+          <li>
+            <strong>Isolamento</strong>
+            <p>
+              : Por conta do encapsulamento de ambientes que o Docker fornece,
+              cada contêiner possui seu próprio ambiente isolado. Isso significa
+              que a aplicação principal não será afetada completamente pelo mal
+              funcionamento de outras aplicações em execução no mesmo sistema,
+              por exemplo. Isso ajuda a evitar conflitos entre dependências e
+              garante que a aplicação principal seja executada de forma
+              confiável e previsível.
+            </p>
+          </li>
+
+          <li>
+            <strong>Reprodutibilidade</strong>
+            <p>
+              : O Docker consegue automatizar o processo de customização e
+              configuração desses contêineres de maneira prática e fácil com um
+              arquivo <strong>DOCKERFILE</strong>, garantindo que a mesma versão
+              de um aplicativo seja executado em diferentes ambientes. Além
+              disso, o Docker também suporta o uso de virtualizações/contêineres
+              já configurados (as <strong>IMAGENS</strong>), o que facilita
+              ainda mais a distribuição e implantação da aplicação.
+            </p>
+          </li>
+        </ul>
+      </article>
+
+      <div id="docker-vs-maquinas-virtuais-titulo" class="titulo-topicos">
+        <h1>Docker VS Máquinas Virtuais</h1>
+        <img
+          id="docker-icon-topic"
+          src="/assets/img/cpu-icon.png"
+          alt="Logo do Docker"
+        />
+      </div>
+
+      <article
+        id="docker-vs-maquinas-virtuais-conteudo"
+        class="conteudo-box invisivel"
+      >
+        <p>
+          Antes do Docker, a tecnologia de
+          <strong>Máquinas Virtuais ou Virtual Machines (VM)</strong> era
+          utilizada com o objetivo de criar um ambiente de computação
+          virtualizado que simula um hardware físico, permitindo a execução de
+          múltiplos sistemas operacionais e aplicativos em um único hardware
+          físico.
+        </p>
+
+        <p>
+          Ambos fornecem isolamento, mas a abordagem é diferente.
+          <strong
+            >Os contêineres Docker isolam processos, enquanto as VMs isolam
+            sistemas operacionais inteiros.</strong
+          >
+        </p>
+
+        <p>
+          Por conta disso, o Docker fornece uma abordagem com menos gasto de
+          recursos, visto que há o compartilhamento do kernel do sistema
+          operacional hospedeiro, o que significa que as
+          <strong>IMAGENS</strong> são mais leves e consomem menos recursos do
+          sistema em comparação com os ambientes das VMs.
+        </p>
+
+        <div id="representacoes-ambientes">
+          <img
+            src="/assets/img/aplicacao-em-conteiner.png"
+            alt="aplicação em contêiner"
+          />
+          <img
+            src="/assets/img/APLICACAO-EM-MAQUINA-VIRTUAL.png"
+            alt="aplicação em máquina virtual"
+          />
+        </div>
+      </article>
+
+      <section
+        class="vocabulario-aprendido invisivel"
+        id="vocabulario-aprendido"
+      >
+        <div>
+          <h2>Vocabulário Aprendido</h2>
+          <img id="abc-icon" src="/assets/img/ABC.png" alt="abc" />
+        </div>
+
+        <ul>
+          <li>IMAGEM</li>
+          <li>CONTÊINER</li>
+          <li>VIRTUALIZAÇÃO</li>
+
+          <p>Congrats :)! Seu primeiro passo no GoDocker!</p>
+        </ul>
+      </section>
+
+      <!-- <img id="wavetest" src="/assets/img/wavetest.png" alt=""> -->
+      <img class="ocean" src="/assets/img/ocean.png" alt="oceano" />
+    </main>
+
+    <footer>
+      <p>GoDocker! - Significado de Docker</p>
+    </footer>
+  </body>
+</html>
