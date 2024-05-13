@@ -11,6 +11,8 @@ const dockerVsMaquinasVirtuaisConteudo = document.getElementById(
   "docker-vs-maquinas-virtuais-conteudo"
 );
 
+// fazer a aba de vocabulário aprendido aparecer
+
 let verificarCliqueDefinicaoDocker = false;
 let verificarCliqueVisaoGeral = false;
 let verificarCliqueDockerVsMaquinasVirtuais = false;

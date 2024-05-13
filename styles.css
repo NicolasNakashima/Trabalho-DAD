@@ -252,5 +252,41 @@ header span {
 /* Estilização da página Imagem e Contêiner */
 
 #ocean-with-containers {
-  height: 80%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  bottom: 0;
+}
+
+#images-conteiner-image {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+}
+
+#conteiner-docker,
+#image-of-a-sus-whale {
+  width: 25%;
+}
+
+#conteiner-docker:hover {
+  width: 27%;
+  transition: width 0.3s ease;
+  cursor: pointer;
+}
+
+#conteiner-docker:not(:hover) {
+  transition: width 0.3s ease;
+  width: 25%;
+}
+
+#image-of-a-sus-whale:hover {
+  width: 27%;
+  transition: width 0.3s ease;
+  cursor: pointer;
+}
+
+#image-of-a-sus-whale:not(:hover) {
+  transition: width 0.3s ease;
+  width: 25%;
 }
