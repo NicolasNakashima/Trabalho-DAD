@@ -10,18 +10,31 @@
   font-family: Poppins;
 }
 
-body {
-  margin: 0;
-  padding: 0;
+main {
+  margin-left: 100px;
 }
 
-#headerGoDocker {
-  height: 80px;
-  background-color: #198CE0;
+div.box-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-#headerGoDocker ul {
-  list-style-type: none;
-}
-#headerGoDocker ul li {
+
+#slogan {
   display: inline;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+.btnComece {
+  display: inline-block;
+  background-color: #198ce0;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 15px;
+}
+
+img#logo-godocker {
+  display: inline-block;
+  width: 40vw;
+}
