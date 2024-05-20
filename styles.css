@@ -291,3 +291,11 @@ header span {
   width: 25%;
 }
 
+#script-example {
+  width: 60%;
+  border: 5px solid #198ce0;
+}
+
+textopequeno {
+  font-size: 14px;
+}

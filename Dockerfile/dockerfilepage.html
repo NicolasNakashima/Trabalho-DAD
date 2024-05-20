@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dockerfile</title>
+
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="/assets/img/godocker.svg"
+      type="image/x-icon"
+    />
+    <script src="oqueedocker.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <p>G<span>o</span>D<span>o</span>cker!</p>
+    </header>
+
+    <main>
+      <div class="titulo-topicos">
+        <h1>O que é Dockefile?</h1>
+        <img id="engrenagemicon" src="/assets/img/engrenagemicon.png" alt="" />
+      </div>
+      <article class="conteudo-box">
+        <p>
+          Parabéns por chegar ao 3° assunto do GoDocker! Agora iremos explorar o
+          assunto de Dockerfile.
+        </p>
+        <p>
+          Basicamente, os Dockerfiles, são scripts com uma
+          <strong> série de comandos para criação de uma imagem </strong>.
+          Neles, podemos  fazer uma série de coisas como executar comandos sh,
+          criar variáveis de ambiente, copiar arquivos e pastas do host para
+          dentro da imagem
+        </p>
+        <p>
+          Isso permite que você possa
+          <strong>
+            automatizar a criação de imagens para os contêineres da sua
+            aplicação se basearem </strong
+          >, uma vez que uma aplicação pode fazer o uso de vários Dockerfiles!
+        </p>
+        <img src="/assets/img/fluxo-dockerfile.png" alt="fluxo dockerfile" />
+      </article>
+
+      <div class="titulo-topicos">
+        <h1>O Script</h1>
+        <img id="engrenagemicon" src="/assets/img/script-icon.png" alt="" />
+      </div>
+
+      <article class="conteudo-box">
+        <p>
+          Vamos entender como podemos montar este <strong>script</strong>! O
+          primeiro passo, é se ambientar com alguns comandos e seus respectivos
+          significados.
+        </p>
+
+        <img id="script-example" src="/assets/img/script-example.png" alt="" />
+        <textopequeno>Imagem: documentação oficial</textopequeno>
+
+        <p>
+          Neste exemplo acima, temos um script de Dockerfile que está
+          configurando uma imagem de node.js.
+        </p>
+      </article>
+    </main>
+  </body>
+</html>
