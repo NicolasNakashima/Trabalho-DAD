@@ -1,0 +1,135 @@
+
+@font-face {
+    font-family: "Jua";
+    src: url(/Jua-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: "Poppins-regular";
+    src: url(/Poppins/Poppins-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: "Poppins-bold";
+    src: url(/Poppins/Poppins-Bold.ttf);
+  }
+
+
+body {
+    margin: 0;
+}
+
+main{
+  display: flex;
+  justify-content: center;  
+}
+
+main h2 {
+    font-family: "Jua";
+    color: #004779;
+  }
+
+main p {
+    font-family: "Poppins-regular";
+}
+
+header {
+    font-family: "Jua";
+    color: #ffffff;
+    background-color: #198ce0;
+    padding: 1px;
+    text-align: center;
+    font-size: 24px;
+    position: fixed;
+    width: 100%;
+    
+  }
+
+#texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 75px;
+}
+
+#Wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#containerImg {
+    height: 500px;
+    width: 1000px;
+}
+
+#WhatIsDocker{
+  position: fixed;
+  top: 300px;
+  right: 915px;
+}
+
+#WhatIsDocker:hover {
+  width: 270px;
+  transition: width 0.3s ease;
+  cursor: pointer;
+}
+
+#WhatIsDocker:not(:hover) {
+  transition: width 0.3s ease;
+  width: 250px;
+}
+
+
+#ImageAndContainer{
+  position: fixed;
+  top: 450px;
+  right: 800px;
+}
+
+#ImageAndContainer:hover {
+  width: 270px;
+  transition: width 0.3s ease;
+  cursor: pointer;
+}
+
+#ImageAndContainer:not(:hover) {
+  transition: width 0.3s ease;
+  width: 250px;
+}
+
+
+#DockerFile{
+  position: fixed;
+  top: 350px;
+  right: 500px;
+}
+
+#DockerFile:hover {
+  width: 270px;
+  transition: width 0.3s ease;
+  cursor: pointer;
+}
+
+#DockerFile:not(:hover) {
+  transition: width 0.3s ease;
+  width: 250px;
+}
+
+#DockerCompose{
+  position: fixed;
+  top: 520px;
+  right: 340px;
+}
+
+#DockerCompose:hover {
+  width: 270px;
+  transition: width 0.3s ease;
+  cursor: pointer;
+}
+
+#DockerCompose:not(:hover) {
+  transition: width 0.3s ease;
+  width: 250px;
+}
