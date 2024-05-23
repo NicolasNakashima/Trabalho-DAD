@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title id="tema">Quiz 1 - O que é Docker?</title>
-    
+
     <script defer src="quizes.js"></script>
 
     <link rel="stylesheet" href="/styles.css" />
@@ -23,7 +23,7 @@
       <h1>1. O que é Docker</h1>
 
       <div id="pontos">
-        <h4  class="invisivel">Pontuação Final: <span >0</span></h4>
+        <h4 class="invisivel">Pontuação Final: <span>0</span></h4>
       </div>
 
       <div>
@@ -31,112 +31,204 @@
         <img src="/assets/img/whale.png" alt="" />
       </div>
       <form action="">
-      <h3>Questão 1 - Com qual conceito o Docker Trabalha?</h3>
-      <div>
-        <input type="radio" name="question1" value="op1q1" class="questoes"/>
-        <label for="op1q1"
-          >O Docker trabalha com o conceito de virtualização de contêineres, ou
-          seja, inserir um ambiente em um contêiner significa encapsulá-lo e
-          torná-lo mais portável para uso da aplicação principal.</label
-        >
+        <h3>Questão 1 - Com qual conceito o Docker Trabalha?</h3>
+        <div>
+          <div class="questao">
+            <input
+              type="radio"
+              name="question1"
+              value="op1q1"
+              class="questoes"
+            />
+            <label for="op1q1"
+              >O Docker trabalha com o conceito de virtualização de contêineres,
+              ou seja, inserir um ambiente em um contêiner significa
+              encapsulá-lo e torná-lo mais portável para uso da aplicação
+              principal.</label
+            >
+          </div>
 
-        <input type="radio" name="question1" value="op2q1" class="questoes"/>
-        <label for="op2q1"
-          >O Docker trabalha com o conceito de separação. Uma vez que as
-          aplicações estão isoladas, cada uma em seu ambiente, não importa o que
-          aconteça, a aplicação principal nunca será totalmente afetada.</label
-        >
+          <div class="questao">
+            <input
+              type="radio"
+              name="question1"
+              value="op2q1"
+              class="questoes"
+            />
+            <label for="op2q1"
+              >O Docker trabalha com o conceito de separação. Uma vez que as
+              aplicações estão isoladas, cada uma em seu ambiente, não importa o
+              que aconteça, a aplicação principal nunca será totalmente
+              afetada.</label
+            >
+          </div>
 
-        <input type="radio" name="question1" value="op3q1" class="questoes"/>
-        <label for="op3q1"
-          >O Docker trabalha com o conceito de virtualização, que diz que uma
-          vez que os ambientes estão juntos e dependentes um do outro, a
-          aplicação principal se potencializará, funcionando totalmente.</label
-        >
+          <div class="questao">
+            <input
+              type="radio"
+              name="question1"
+              value="op3q1"
+              class="questoes"
+            />
+            <label for="op3q1"
+              >O Docker trabalha com o conceito de virtualização, que diz que
+              uma vez que os ambientes estão juntos e dependentes um do outro, a
+              aplicação principal se potencializará, funcionando
+              totalmente.</label
+            >
+          </div>
 
-        <input type="radio" name="question1" value="op4q1" class="questoes"/>
-        <label for="op4q1"
-          >O Docker trabalha com o conceito de encapsulamento de aplicações. As
-          aplicações distintas podem interagir entre si com total
-          dependência.</label
-        >
-      </div>
+          <div class="questao">
+            <input
+              type="radio"
+              name="question1"
+              value="op4q1"
+              class="questoes"
+            />
+            <label for="op4q1"
+              >O Docker trabalha com o conceito de encapsulamento de aplicações.
+              As aplicações distintas podem interagir entre si com total
+              dependência.</label
+            >
+          </div>
+        </div>
 
-      <h3>Questão 2 - Há vantagens do Docker em cima das MV’s?</h3>
+        <h3>Questão 2 - Há vantagens do Docker em cima das MV’s?</h3>
 
-      <div>
-        <input type="radio" name="question2" value="op1q2" class="questoes"/>
-        <label for="op1q2"
-          >O Docker não oferece nenhuma vantagem em cima das Máquinas Virtuais
-          (MV’s), uma vez que virtualiza o sistema operacional inteiro ao invés
-          da aplicação de maneira isolada.</label
-        >
+        <div class="questao">
+          <div>
+            <input
+              type="radio"
+              name="question2"
+              value="op1q2"
+              class="questoes"
+            />
+            <label for="op1q2"
+              >O Docker não oferece nenhuma vantagem em cima das Máquinas
+              Virtuais (MV’s), uma vez que virtualiza o sistema operacional
+              inteiro ao invés da aplicação de maneira isolada.</label
+            >
+          </div>
 
-        <input type="radio" name="question2" value="op2q2" class="questoes"/>
-        <label for="op2q2"
-          >O Docker oferece a vantagem de economia de recursos e rentabilidade
-          já que virtualiza ambientes em contêineres de maneira a compartilhar
-          somente o kernel do sistema operacional hospedeiro.</label
-        >
+          <div class="questao">
+            <input
+              type="radio"
+              name="question2"
+              value="op2q2"
+              class="questoes"
+            />
+            <label for="op2q2"
+              >O Docker oferece a vantagem de economia de recursos e
+              rentabilidade já que virtualiza ambientes em contêineres de
+              maneira a compartilhar somente o kernel do sistema operacional
+              hospedeiro.</label
+            >
+          </div>
 
-        <input type="radio" name="question2" value="op3q2" class="questoes"/>
-        <label for="op3q2"
-          >O conceito de isolamento diz respeito a encapsular os ambientes de
-          maneira que os torne independentes um do outro, fazendo com que a
-          aplicação principal não seja afetada totalmente quando houver um
-          imprevisto com algum ambiente. Isso garante uma aplicação mais
-          previsível e confiável.
-        </label>
+          <div class="questao">
+            <input
+              type="radio"
+              name="question2"
+              value="op3q2"
+              class="questoes"
+            />
+            <label for="op3q2"
+              >O conceito de isolamento diz respeito a encapsular os ambientes
+              de maneira que os torne independentes um do outro, fazendo com que
+              a aplicação principal não seja afetada totalmente quando houver um
+              imprevisto com algum ambiente. Isso garante uma aplicação mais
+              previsível e confiável.
+            </label>
+          </div>
 
-        <input type="radio" name="question2" value="op4q2" class="questoes"/>
-        <label for="op4q2"
-          >Na verdade, as Máquinas Virtuais são superiores ao Docker. Elas
-          trabalham com mais economia de recursos enquanto o Docker busca
-          virtualizar os ambientes em contêineres, ocupando um espaço muito
-          maior.
-        </label>
-      </div>
+          <div class="questao">
+            <input
+              type="radio"
+              name="question2"
+              value="op4q2"
+              class="questoes"
+            />
+            <label for="op4q2"
+              >Na verdade, as Máquinas Virtuais são superiores ao Docker. Elas
+              trabalham com mais economia de recursos enquanto o Docker busca
+              virtualizar os ambientes em contêineres, ocupando um espaço muito
+              maior.
+            </label>
+          </div>
+        </div>
 
-      <h3>
-        Questão 3 - O Docker oferece a vantagem do isolamento. O que isso
-        significa?
-      </h3>
+        <h3>
+          Questão 3 - O Docker oferece a vantagem do isolamento. O que isso
+          significa?
+        </h3>
 
-      <div>
-        <input type="radio" name="question3" value="op1q3" class="questoes"/>
-        <label for="op1q3"
-          >O conceito de isolamento significa que os ambientes utilizados
-          estarão um dentro do outro, oferecendo uma abstração de camadas maior,
-          fazendo com que a aplicação principal esteja completamente
-          isolada.</label
-        >
+        <div class="questao">
+          <div>
+            <input
+              type="radio"
+              name="question3"
+              value="op1q3"
+              class="questoes"
+            />
+            <label for="op1q3"
+              >O conceito de isolamento significa que os ambientes utilizados
+              estarão um dentro do outro, oferecendo uma abstração de camadas
+              maior, fazendo com que a aplicação principal esteja completamente
+              isolada.</label
+            >
+          </div>
 
-        <input type="radio" name="question3" value="op2q3" class="questoes"/>
-        <label for="op2q3"
-          >O conceito de isolamento significa que os ambientes utilizados
-          estarão cada um em um computador, isolando-as totalmente. Isso quer
-          dizer que você precisará de vários computadores para formar a
-          aplicação principal.</label
-        >
+          <div class="questao">
+            <input
+              type="radio"
+              name="question3"
+              value="op2q3"
+              class="questoes"
+            />
+            <label for="op2q3"
+              >O conceito de isolamento significa que os ambientes utilizados
+              estarão cada um em um computador, isolando-as totalmente. Isso
+              quer dizer que você precisará de vários computadores para formar a
+              aplicação principal.</label
+            >
+          </div>
 
-        <input type="radio" name="question3" value="op3q3" class="questoes"/>
-        <label for="op3q3"
-          >O conceito de isolamento diz respeito a encapsular os ambientes de
-          maneira que os torne independentes um do outro, fazendo com que a
-          aplicação principal não seja afetada totalmente quando houver um
-          imprevisto com algum ambiente. Isso garante uma aplicação mais
-          previsível e confiável.</label
-        >
+          <div class="questao">
+            <input
+              type="radio"
+              name="question3"
+              value="op3q3"
+              class="questoes"
+            />
+            <label for="op3q3"
+              >O conceito de isolamento diz respeito a encapsular os ambientes
+              de maneira que os torne independentes um do outro, fazendo com que
+              a aplicação principal não seja afetada totalmente quando houver um
+              imprevisto com algum ambiente. Isso garante uma aplicação mais
+              previsível e confiável.</label
+            >
+          </div>
 
-        <input type="radio" name="question3" value="op4q3" class="questoes"/>
-        <label for="op4q3"
-          >O isolamento do Docker quer dizer isolar cada etapa de virtualização
-          de contêineres em uma parte do processo, ou seja, virtualizar um
-          ambiente passo a passo.</label
-        >
-        <input id="enviar" type="submit">Finalizar Quiz</input>
-      </div>
-    </form>
+          <div class="questao">
+            <input
+              type="radio"
+              name="question3"
+              value="op4q3"
+              class="questoes"
+            />
+            <label for="op4q3"
+              >O isolamento do Docker quer dizer isolar cada etapa de
+              virtualização de contêineres em uma parte do processo, ou seja,
+              virtualizar um ambiente passo a passo.</label
+            >
+            <button id="enviar" type="submit">FINALIZAR QUIZ</button>
+          </div>
+        </div>
+      </form>
     </main>
+
+    <footer>
+      <p>GoDocker! - Significado de Docker</p>
+    </footer>
   </body>
 </html>
