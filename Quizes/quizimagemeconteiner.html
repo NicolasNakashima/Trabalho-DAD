@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz 2 - Imagem e Contêiner</title>
+    <title id="tema">Quiz 2 - Imagem e Contêiner</title>
 
     <script defer src="quizes.js"></script>
 
@@ -21,6 +21,119 @@
 
     <main>
       <h1>2. Imagem e Contêiner</h1>
+
+      <div id="pontos">
+        <h4  class="invisivel">Pontuação Final: <span >0</span></h4>
+      </div>
+
+      <div>
+        <img src="/assets/img/O quiz.png" alt="O quiz" />
+        <img src="/assets/img/whale.png" alt="" />
+      </div>
+      <form action="">
+      <h3>Questão 1 - O que é uma imagem e qual a sua utilidade?</h3>
+      <div>
+        <div class="questao">
+          <input type="radio" name="question1" value="op1q1" class="questoes"/>
+          <label for="op1q1"
+            >Uma imagem é uma representação visual de dados em formato de gráfico ou foto, utilizada principalmente para fins de análise estatística.</label
+          >
+        </div>
+
+        <div class="questao">
+          <input type="radio" name="question1" value="op2q1" class="questoes"/>
+          <label for="op2q1"
+            >Uma imagem é uma extensão que crio em meu computador, baseada sempre um contêiner para personalizar a minha aplicação.</label
+          >
+        </div>
+
+        <div class="questao">
+          <input type="radio" name="question1" value="op3q1" class="questoes"/>
+          <label for="op3q1"
+            >Uma imagem representa um ambiente em que tenho todos elementos e configurações necessárias para basear a minha aplicação. É possível estilizar imagens.</label
+          >
+        </div>
+
+        <div class="questao">
+          <input type="radio" name="question1" value="op4q1" class="questoes"/>
+          <label for="op4q1"
+            >Uma imagem representa um arquivo contendo todas as configurações para a minha aplicação. Para fazê-la, preciso serializar uma fotografia em bits, para o computador conseguir ler. </label
+          >
+        </div>
+      </div>
+
+      <h3>Questão 2 - Qual o conceito de contêiner em Docker?</h3>
+
+      <div>
+        <div class="questao">
+          <input type="radio" name="question2" value="op1q2" class="questoes"/>
+          <label for="op1q2"
+            >Um contêiner em Docker é a base para uma imagem, pois contém configurações padrões para qualquer configuração de um aplicativo. Isso quer dizer que precisamos de um contêiner para termos uma imagem.</label
+          >
+        </div>
+
+        <div class="questao">
+          <input type="radio" name="question2" value="op2q2" class="questoes"/>
+          <label for="op2q2"
+            >Um contêiner em Docker é um pacote de software leve, independente e executável que inclui tudo o que é necessário para executar um aplicativo: código, tempo de execução, ferramentas do sistema, bibliotecas e configurações do sistema</label
+          >
+        </div>
+
+        <div class="questao">
+          <input type="radio" name="question2" value="op3q2" class="questoes"/>
+          <label for="op3q2"
+            >Um contêiner em Docker é um pacote de configurações para o seu software, que tem dependência em configurações do sistema local em que está inserido.
+          </label>
+        </div>
+
+        <div class="questao">
+          <input type="radio" name="question2" value="op4q2" class="questoes"/>
+          <label for="op4q2"
+            >Um contêiner em Docker representa uma virtualização de um computador remoto ao seu. É utilizado para acessar o conteúdo criptografado dos arquivos presentes.
+          </label>
+        </div>
+      </div>
+
+      <h3>
+        Questão 3 - Qual a diferença entre Imagem e Contêiner?
+      </h3>
+
+      <div>
+        <div class="questao">
+          <input type="radio" name="question3" value="op1q3" class="questoes"/>
+          <label for="op1q3"
+            >Um contêiner do Docker é uma aplicação ou um serviço de software independente e executável. Por outro lado, uma imagem do Docker é o modelo carregado no contêiner para executá-lo, como um conjunto de instruções.</label
+          >
+        </div>
+
+        <div class="questao">
+          <input type="radio" name="question3" value="op2q3" class="questoes"/>
+          <label for="op2q3"
+            >Uma imagem do Docker é uma aplicação ou um serviço de software independente e executável. Por outro lado, uma contêiner do Docker é o modelo carregado no contêiner para executá-lo, como um conjunto de instruções.</label
+          >
+        </div>
+
+        <div class="questao">
+          <input type="radio" name="question3" value="op3q3" class="questoes"/>
+          <label for="op3q3"
+            >Um contêiner em docker é uma virtualização da sua aplicação, e é opcional que se baseie em uma imagem. A relação de imagem e contêiner é, que, o contêiner se baseie em uma ou mais imagens para adequada configuração da aplicação.</label
+          >
+        </div>
+
+        <div class="questao">
+          <input type="radio" name="question3" value="op4q3" class="questoes"/>
+          <label for="op4q3"
+            >Uma imagem em Docker diz respeito a um módulo já configurado para servir de base para uma virtualização, que no caso é um contêiner. Os contêineres são dependentes entre si e é necessário completo funcionamento de um para o bom funcionamento de outro</label
+          >
+        </div>
+        <button id="enviar" type="submit">FINALIZAR QUIZ</button>
+      </div>
+    </form>
     </main>
+
+    <footer>
+      <p>GoDocker! - Significado de Docker</p>
+    </footer>
+
   </body>
 </html>
