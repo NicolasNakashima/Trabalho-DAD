@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "Jua";
+    src: url("../Jua-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../Poppins/Poppins-Regular.ttf") format("truetype");
+}
+
+
+* {
+    font-family: Poppins;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#headerGoDocker {
+    height: 80px;
+    background-color: #198CE0;
+
+    ul {
+        list-style-type: none;
+        li {
+            display: inline;
+        }
+    }
+}
+

@@ -2,12 +2,10 @@
   font-family: "Jua";
   src: url("../Jua-Regular.ttf") format("truetype");
 }
-
 @font-face {
   font-family: "Poppins";
   src: url("../Poppins/Poppins-Regular.ttf") format("truetype");
 }
-
 * {
   font-family: Poppins;
 }
