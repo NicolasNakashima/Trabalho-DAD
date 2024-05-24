@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imagem, Contêiner e DockerHub</title>
+
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="/assets/img/godocker.svg"
+      type="image/x-icon"
+    />
+    <script src="imagemconteinerdockerhub.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <p>G<span>o</span>D<span>o</span>cker!</p>
+    </header>
+    <main>
+      <h1>2. Imagem, Contêiner e DockerHub</h1>
+
+      <div id="images-conteiner-image">
+        <img
+          id="conteiner-docker"
+          src="/assets/img/conteiner-docker.svg"
+          alt=""
+        />
+        <img
+          id="image-of-a-sus-whale"
+          src="/assets/img/image-of-a-sus-whale.svg"
+          alt=""
+        />
+      </div>
+
+      <div class="titulo-topicos" id="imagem-titulo">
+        <h1>Imagem</h1>
+        <img
+          id="imagem-icon"
+          src="/assets/img/foto-imagem-icon.png"
+          alt=""
+        />
+      </div>
+
+      <article id="imagem-conteudo" class="conteudo-box invisivel">
+        <p>
+          Agora, falando sobre imagem, que pode parecer confuso no começo mas na 
+          verdade é bem fácil de entender. Precisamos aprender a analogia que o nome propôe.
+        </p>
+
+        <p>
+          O que você pensa quando se fala em imagem? Provavelmente, a primeira
+          coisa que pensou foi em <strong>fotos que tiramos com o nosso celular</strong> ou qualquer
+          tipo de dispositivo fotográfico. E o conceito de imagem no Docker tem muita
+          relação com as imagens que tiramos!
+        </p>
+
+        <p>
+          A imagem no Docker é justamente como se fosse uma foto que tiramos de uma aplicação, 
+          então <strong>tudo o que possui na aplicação está na imagem.</strong> A imagem apresenta todos os 
+          elementos e fazem com que a imagem no todo esteja visível da forma que ela é.
+        </p>
+
+        <p>
+          Algo muito interessante e que será muito usual é que você pode usar imagens para 
+          <strong>criar seus contêineres baseados na mesma</strong> para fazer sua aplicação.
+        </p>
+
+        <img id="imagemIA" src="/assets/img/imagemIA.jpg" alt="imagemIA">
+      </article>
+
+      <div id="conteiner-titulo" class="titulo-topicos">
+        <h1>Contêiner</h1>
+        <img id="conteiner-icon" src="/assets/img/conteiner-icon.png" alt="" />
+      </div>
+
+      <article id="conteiner-conteudo" class="conteudo-box invisivel">
+        <p>
+          Compreender sobre o que são os contêineres em Docker não é uma tarefa 
+          difícil quando vamos analisar o que faz o contêiner que estamos acostumados
+          a conhecer, a grande caixa de aço que transporta diversos tipos de bagagem 
+          sendo pesadas ou leves.
+        </p>
+
+        <p>
+          A fins de entendimento, pense numa festa que está fazendo em sua casa. Para 
+          se fazer uma festa é necessário diversas coisas, como por exemplo: bebidas, 
+          comida, música, decorações, etc. Todos esses elementos são fundamentais para 
+          fazer uma comemoração acontecer.
+        </p>
+
+        <p>
+          Agora, imagine que ao invés de organizar tudo isso diretamente em sua casa, 
+          você vai dividir cada coisa em contêiner, um contêiner para as bebidas, outro
+          para as comidas, e assim em diante. Não colocando apenas os itens principais, 
+          mas também os utensílios e ingredientes que os compõe.
+        </p>
+
+        <p>
+          Quando a festa começa, você simplesmente abre a caixa que tenha algo que procura, 
+          pronto para usar. E como cada caixa é isolada, se uma bebida derramar em seu contêiner, 
+          não afetará os outros. Cada caixa é independente e funciona por conta própria.
+        </p>
+
+        <p>
+          Assim como em sua festa, os contêineres Docker permite com que se empacote seu aplicativo 
+          e todas suas dependências em um pacote único e portátil. Podendo executar esse pacote em 
+          qualquer lugar que tiver o Docker instalado, funcionando da mesma maneira, independente 
+          do ambiente que for executado.
+        </p>
+      </article>
+
+      <div id="imagem-vs-conteiner-titulo" class="titulo-topicos">
+        <h1>Imagem VS Contêiner</h1>
+        <img id="pensative-icon" src="/assets/img/pensative-icon.png" alt="" />
+      </div>
+
+      <article
+        id="imagem-vs-conteiner-conteudo"
+        class="conteudo-box invisivel"
+      >
+        <h2 class="topicos-subtitulos">Definição</h2>
+        <p>
+          Imagem: Uma imagem é um template imutável que contém tudo o que 
+          é necessário para rodar um contêiner. Isso inclui o código do aplicativo,
+            bibliotecas, dependências, ferramentas e configurações.
+          Contêiner: Um contêiner é uma instância em execução de uma imagem. É um 
+          ambiente isolado onde a aplicação é executada.
+        </p>
+
+        <h2 class="topicos-subtitulos">Características</h2>
+
+        <p>
+          Imagem: Imutável, leve, portável e pouco armazenamento ocupado.
+          Contêiner: Mutável durante a execução, dinâmico(pode ser criado 
+          e destruído rapidamente), isolamento de processos, proporciona melhor 
+          escalabilidade.
+        </p>
+      </article>
+
+      <div id="dockerhub-titulo" class="titulo-topicos">
+        <h1>DockerHub</h1>
+        <img id="dockerhub-icon" src="/assets/img/godocker.svg" alt="DockerHub">
+      </div>
+
+      <article
+        id="dockerhub-conteudo"
+        class="conteudo-box invisivel"
+      >
+        <h2 class="topicos-subtitulos">Explorando DockerHub</h2>
+        <p>
+          O DockerHub é mais do que apenas um repositório de contêineres; é uma 
+          vasta biblioteca repleta de recursos e possibilidades para desenvolvedores, 
+          equipes de operações de TI e entusiastas de tecnologia em todo o mundo. Neste 
+          texto, vamos explorar o que torna o DockerHub tão especial e como ele pode ser 
+          uma ferramenta valiosa em seu arsenal de desenvolvimento de software.
+        </p>
+
+        <h2 class="topicos-subtitulos">O que é DockerHub?</h2>
+
+        <p>
+          Imagine uma enorme biblioteca virtual, onde você pode encontrar uma grande variedade
+          de imagens Docker prontas para uso. Isso é o DockerHub. É uma plataforma de hospedagem
+          de contêineres Docker que oferece acesso a uma vasta coleção de imagens pré-configuradas,
+          prontas para serem baixadas e executadas em seus próprios ambientes de desenvolvimento,
+          teste ou produção.
+        </p>
+
+        <h2 class="topicos-subtitulos">O que você pode encontrar no DockerHub?</h2>
+
+        <p>
+          No DockerHub, você encontrará uma ampla gama de imagens Docker, desde sistemas operacionais
+          populares como Ubuntu, CentOS e Alpine Linux, até frameworks de desenvolvimento como Node.js,
+          Python e Ruby on Rails, além de aplicativos de servidor como MySQL, MongoDB e Nginx. Além disso,
+          você pode encontrar imagens para ferramentas de desenvolvimento, serviços de integração contínua,
+          e até mesmo aplicativos prontos para uso, como blogs, fóruns e CMSs.
+        </p>
+
+        <h2 class="topicos-subtitulos">Como usar o DockerHub?</h2>
+
+        <p>
+          Usar o DockerHub é simples. Você pode pesquisar por imagens específicas usando palavras-chave relevantes
+          ou navegar pelas diferentes categorias disponíveis. Uma vez encontrada a imagem desejada, você pode 
+          baixá-la para o seu ambiente local com um único comando Docker. Por exemplo, para baixar a imagem do 
+          Ubuntu, você pode usar o comando docker pull ubuntu.
+        </p>
+
+        <p>
+          Além de baixar imagens, você também pode fazer upload de suas próprias imagens para o DockerHub, 
+          compartilhando seu trabalho com a comunidade ou usando-o em diferentes projetos.
+        </p>
+
+        <h2 class="topicos-subtitulos">Porque o DockerHub é importante?</h2>
+
+        <p>
+          O DockerHub é uma peça fundamental no ecossistema Docker por várias razões:
+        </p>
+
+        <ol>
+          <li>
+            Facilidade de uso: Simplifica o processo de obtenção e compartilhamento de contêineres Docker, economizando
+            tempo e esforço para desenvolvedores e equipes de operações de TI.
+          </li>
+          <li>
+            Confiabilidade: As imagens no DockerHub são geralmente mantidas por desenvolvedores e organizações respeitáveis,
+            o que garante a qualidade e a segurança das imagens disponíveis.
+          </li>
+          <li>
+            Colaboração: Permite que desenvolvedores de todo o mundo compartilhem e colaborem em projetos de software, acelerando
+            a inovação e o desenvolvimento.
+          </li>
+          <li>
+            Reprodutibilidade: Ao utilizar imagens do DockerHub, você pode garantir que seus aplicativos sejam executados de
+            maneira consistente em diferentes ambientes, desde o desenvolvimento até a produção.
+          </li>
+        </ol>
+          
+        <p>
+          Em resumo, o DockerHub é uma fonte inestimável de recursos para quem trabalha com contêineres Docker. Seja para
+          encontrar imagens prontas para uso, compartilhar seu próprio trabalho ou colaborar com outros desenvolvedores,
+          o DockerHub oferece uma infinidade de possibilidades para impulsionar seus projetos de software. Explore,
+          experimente e descubra o que o DockerHub pode fazer por você e sua equipe.
+        </p>
+        
+      </article>
+
+      <section
+        class="vocabulario-aprendido invisivel"
+        id="vocabulario-aprendido"
+      >
+        <div>
+          <h2>Vocabulário Aprendido</h2>
+          <img id="abc-icon" src="/assets/img/ABC.png" alt="abc" />
+        </div>
+
+        <ul>
+          <li>APLICAÇÃO</li>
+          <li>EMPACOTAR</li>
+          <li>DOCKERHUB</li>
+
+          <p>Congrats :)!</p>
+        </ul>
+      </section>
+
+      <!-- <img id="wavetest" src="/assets/img/wavetest.png" alt=""> -->
+      <img class="ocean" src="/assets/img/ocean.png" alt="oceano" />
+    </main>
+
+    <footer>
+      <p>GoDocker! - Significado de Docker</p>
+    </footer>
+  </body>
+</html>
