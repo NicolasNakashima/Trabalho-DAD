@@ -89,10 +89,25 @@ strong {
   user-select: none;
   cursor: pointer;
   margin: 0 auto;
+  margin-top: 30px;
   background-color: white;
   border: 1px solid #198ce0;
   padding: 10px 25px;
   box-shadow: 1px 1px 10px rgba(0, 71, 121, 0.3);
+}
+
+#imagem-icon, #conteiner-icon {
+  position: relative;
+  top: 10px;
+  margin: 0px 5px;
+  width: 40px;
+}
+
+#dockerhub-icon {
+  position: relative;
+  top: 3px;
+  margin: 0px 5px;
+  width: 50px;
 }
 
 .titulo-topicos:hover {
@@ -112,7 +127,7 @@ strong {
   display: inline-block;
 }
 
-#engrenagemicon {
+#engrenagemicon, #pensative-icon {
   position: relative;
   top: 10px;
   margin: 0px 5px;
@@ -262,22 +277,23 @@ header span {
   display: flex;
   gap: 100px;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
-#conteiner-docker,
+#conteiner-docker {}
 #image-of-a-sus-whale {
   width: 25%;
 }
 
 #conteiner-docker:hover {
-  width: 27%;
+  width: 37%;
   transition: width 0.3s ease;
   cursor: pointer;
 }
 
 #conteiner-docker:not(:hover) {
   transition: width 0.3s ease;
-  width: 25%;
+  width: 35%;
 }
 
 #image-of-a-sus-whale:hover {
@@ -291,3 +307,30 @@ header span {
   width: 25%;
 }
 
+
+.topicos-subtitulos {
+  font-size: 24px;
+  font-family: "Poppins-bold";
+  color: #198CE0;
+}
+
+#aprenda-comandos {
+  color: #004779;
+  font-weight: bolder;
+  width: 35%;
+  text-align: center;
+  border-radius: 20px;
+  user-select: none;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 50px;
+  background-color: white;
+  border: 1px solid #198ce0;
+  padding: 10px 25px;
+  box-shadow: 1px 1px 10px rgba(0, 71, 121, 0.3);
+}
+
+#imagemIA {
+  width: 50%;
+  border-radius: 20px;
+}
