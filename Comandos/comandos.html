@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comandos</title>
+
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="/assets/img/godocker.svg"
+      type="image/x-icon"
+    />
+
+    <script src="comandos.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <p>G<span>o</span>D<span>o</span>cker!</p>
+    </header>
+    <main>
+      <h1>Caderno de Comandos</h1>
+
+      <img id="caderno-icon" src="/assets/img/caderno-icon.png" alt="" />
+      <pesquisa>
+        <label for="search">Pesquise um comando ou atributo!</label>
+        <input
+          type="text"
+          name="search"
+          id="search"
+          placeholder="Pesquisar comando/atributo"
+        />
+      </pesquisa>
+
+      <article class="conteudo-box">
+        <h2>Comandos gerais</h2>
+
+        <div class="comando">
+          <div class="comand-title">Listar imagens</div>
+          <code> docker images </code>
+        </div>
+
+        <div class="comando invisivel">
+          <div class="comand-title">Baixar imagens</div>
+          <code> docker pull &lt;imagem&gt; </code>
+          <div class="example-command">
+            Exemplo instalando Ubunto: docker pull ubuntu
+          </div>
+        </div>
+
+        <div class="comando">
+          <div class="comand-title">Remover imagem</div>
+          <code> docker rmi &lt;imagem_id_ou_nome&gt; </code>
+          <div class="example-command">
+            Exemplo removendo Ubuntu: docker rmi ubuntu
+          </div>
+        </div>
+
+        <div class="comando">
+          <div class="comand-title">Listar imagens</div>
+          <code> docker images </code>
+        </div>
+
+        <div class="comando">
+          <div class="comand-title">Histórico de execuções</div>
+          <code> docker container ls -a </code>
+        </div>
+
+        <div class="comando">
+          <div class="comand-title">Lista de exeuções</div>
+          <code>docker ps</code>
+        </div>
+
+        <div class="comando">
+          <div class="comand-title">Rodar imagens</div>
+          <code>docker run</code>
+        </div>
+
+        <h2>Atributos e parâmetros</h2>
+
+        <div class="comando">
+          <div class="comand-title">
+            Mapear automaticamente as portas de um contêiner
+          </div>
+          <code>-P</code>
+        </div>
+
+        <div class="comando">
+          <div class="comand-title">
+            Mapear manualmente as portas de um contêiner
+          </div>
+          <code>-p</code>
+          <div class="example-command">
+            docker run -d -p 8080:80 dockersamples/static-site
+          </div>
+        </div>
+
+        <div class="comando">
+          <div class="comand-title">
+            Parâmetro para interagir com o terminal (junção de -i + -t)
+          </div>
+          <code>-it</code>
+          <div class="example-command">docker run -it ubuntu bash</div>
+        </div>
+
+        <div class="comando">
+          <div class="comand-title">Ambiente da interação</div>
+          <code>bash</code>
+          <div class="example-command">docker run -it ubuntu bash</div>
+        </div>
+
+        <div id="texto-nulo" class="invisivel">Nenhum comando encontrado.</div>
+      </article>
+
+      <footer>
+        <p>GoDocker! - Caderno de Comandos</p>
+      </footer>
+    </main>
+  </body>
+</html>
