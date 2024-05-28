@@ -18,6 +18,8 @@ body{
 }
 
 header {
+    display: flex;
+    align-items: center;
     font-family: "Jua";
     color: #ffffff;
     background-color: #198ce0;
@@ -25,9 +27,19 @@ header {
     font-size: 24px;
 }
 header p{
-    margin-left: 67px;
+    position: relative;
+    left: 80px;
 }
-  
+header a{
+    display: flex;
+    position: relative;
+    left: 800px;
+    text-decoration: none;
+    color: white;
+}
+header a:last-child{
+    left: 900px;
+}
 header span {
     color: #adddff;
 }
@@ -80,11 +92,11 @@ footer {
     position: absolute;
     top: 500px;
     left: 180px;
-    font-size: 40px;
+    font-size: 30px;
+    width: 500px;
     background-color: #198CE0;
     color: white;
     border: none;
-    padding: 20px 30px;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.3s ease;
@@ -178,7 +190,7 @@ pre{
 button{
     width: 600px;
     height: 112px;
-    font-size: 36px;
+    font-size: 30px;
     background-color: #198CE0;
     color: white;
     border: none;
