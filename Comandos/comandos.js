@@ -1,7 +1,7 @@
 const search = document.getElementById("search");
-
 const comandos = document.getElementsByClassName("comando");
 const nomeComandos = document.getElementsByClassName("comand-title");
+const codigos = document.getElementsByTagName("code");
 
 console.log(nomeComandos);
 
@@ -18,10 +18,10 @@ search.addEventListener("keyup", () => {
     let valorComando = nomeComandos[i].textContent.toLowerCase();
     valorComando = valorComando.substring(0, tamanhoCampo);
 
+    console.log(valorComando);
+
     if (valorCampo != valorComando) {
-      comandos[i].classList.add("invisivel");
-      console.log(valorCampo);
-      console.log(valorComando);
+      nomeComandos[i].classList.add("invisivel");
     } else {
       comandos[i].classList.remove("invisivel");
     }
