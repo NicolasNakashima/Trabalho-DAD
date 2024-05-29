@@ -3,41 +3,35 @@ const comandos = document.getElementsByClassName("comando");
 const nomeComandos = document.getElementsByClassName("comand-title");
 const codigos = document.getElementsByTagName("code");
 
-const comando1 = document.getElementById("comando1");
+comandos[1].classList.add("invisivel");
 
-comando1.classList.remove("comando");
-comando1.style.display = "none";
-
-console.log(nomeComandos);
+console.log(comandos[1].textContent);
+console.log(nomeComandos[1].textContent);
 
 const textoNulo = document.getElementById("texto-nulo");
+textoNulo.style.display = "none";
 
 search.addEventListener("keyup", () => {
-  const valorCampo = search.value.toLowerCase();
+  const valorCampo = search.value.toLowerCase().trim();
+  const tamanhoCampo = valorCampo.length;
 
-  const tamanhoCampo = nomeComandos.length;
-  let contador = 0;
-  for (let i = 0; i < comandos.length; i++) {
-    let valorComando = nomeComandos[i].textContent.toLowerCase();
+  for (let i = 0; i < nomeComandos.length; i++) {
+    let valorComando = nomeComandos[i].textContent.toLocaleLowerCase().trim();
     valorComando = valorComando.substring(0, tamanhoCampo);
 
-    console.log(valorComando);
+    let command = comandos[i];
+    let contador = nomeComandos.length;
 
     if (valorCampo != valorComando) {
-      nomeComandos[i].classList.add("invisivel");
-      nomeComandos[i].classList.remove("comando");
+      command.style.display = "none";
+      contador--;
     } else {
-      comandos[i].classList.remove("invisivel");
+      command.style.display = "flex";
+      command.style.flexDirection = "column";
     }
 
-    if (comandos[i].classList.contains("invisivel")) {
-      contador++;
+    if (contador < nomeComandos.length) {
+      textoNulo.style.display = "flex";
     }
-  }
-
-  if (contador === comandos.length) {
-    textoNulo.classList.remove("invisivel");
-  } else {
-    textoNulo.classList.add("invisivel");
   }
 });
