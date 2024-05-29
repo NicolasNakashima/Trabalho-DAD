@@ -11,7 +11,7 @@
       href="/assets/img/godocker.svg"
       type="image/x-icon"
     />
-    <script src="oqueedocker.js" defer></script>
+    <script src="dockerfilepage.js" defer></script>
   </head>
   <body>
     <header>
@@ -23,11 +23,11 @@
 
       <img id="docker-logo" src="/assets/img/docker-logo.png" alt="" />
 
-      <div class="titulo-topicos">
-        <h1>O que é Dockefile?</h1>
+      <div class="titulo-topicos" id="visao-geral-titulo">
+        <h1>O que é Dockerfile?</h1>
         <img id="engrenagemicon" src="/assets/img/engrenagemicon.png" alt="" />
       </div>
-      <article class="conteudo-box">
+      <article class="conteudo-box invisivel" id="visao-geral-conteudo">
         <p>
           Parabéns por chegar ao 3° assunto do GoDocker! Agora iremos explorar o
           assunto de Dockerfile.
@@ -49,12 +49,12 @@
         <img src="/assets/img/fluxo-dockerfile.png" alt="fluxo dockerfile" />
       </article>
 
-      <div class="titulo-topicos">
+      <div class="titulo-topicos" id="script-titulo">
         <h1>O Script</h1>
         <img id="engrenagemicon" src="/assets/img/script-icon.png" alt="" />
       </div>
 
-      <article class="conteudo-box">
+      <article class="conteudo-box invisivel" id="script-conteudo">
         <p>
           Vamos entender como podemos montar este <strong>script</strong>! O
           primeiro passo, é se ambientar com alguns comandos e seus respectivos
@@ -62,13 +62,84 @@
         </p>
 
         <img id="script-example" src="/assets/img/script-example.png" alt="" />
-        <textopequeno>Imagem: documentação oficial</textopequeno>
+        <textopequeno><code>Imagem: documentação oficial</code></textopequeno>
 
         <p>
           Neste exemplo acima, temos um script de Dockerfile que está
           configurando uma imagem de node.js.
         </p>
+
+        <p><strong>Então, explicando o exemplo acima:</strong></p>
+
+        <ol>
+          <li>
+            Primeiro, nós precisamos importar a imagem de base, juntamente com a
+            sua versão. Para isso utilizamos o comando <strong>FROM</strong> com
+            a sintaxe &lt;imagem&gt;:&lt;versão&gt;
+          </li>
+          <li>
+            Agora, o diretório base da aplicação. Com o comando
+            <strong>WORKDIR</strong> é possível criar uma pasta caso ela não
+            existir, porém, caso exista, ela é usada do mesmo jeito.
+          </li>
+          <li>
+            O comando <strong>COPY</strong> nos permite copiar um ou mais
+            arquivos para outro local. Neste exemplo estamos copiando o contexto
+            atual, representado por um “.” para o contexto do aplicativo.
+          </li>
+          <li>
+            Utilizamos o <strong>RUN</strong> para rodar
+            <strong>
+              qualquer comando que faça sentido para o contexto da nossa imagem </strong
+            >. O comando yarn install --production é utilizado no gerenciamento
+            de pacotes do Yarn para instalar apenas as dependências de produção
+            de um projeto Node.js, excluindo as dependências de desenvolvimento.
+          </li>
+          <li>
+            O comando <strong>CMD</strong> no Dockerfile é utilizado para
+            <strong>
+              especificar o comando que deve ser rodado quando um contêiner
+              iniciado a partir da imagem é executado.
+            </strong>
+            É a instrução que define o comando padrão a ser executado dentro do
+            contêiner quando ele é iniciado. Recebe uma lista desses comandos
+            como parâmetro.
+          </li>
+        </ol>
+
+        <p>
+          O mais importante é compreender que,
+          <strong>
+            você pode usar o Dockerfile para criar sua imagem uma vez e usá-la
+            como base para diversos contêineres.
+          </strong>
+          É como fazer um modelo de papel e usá-lo várias vezes.
+        </p>
       </article>
+
+      <section
+        class="vocabulario-aprendido invisivel"
+        id="vocabulario-aprendido"
+      >
+        <div>
+          <h2>Vocabulário Aprendido</h2>
+          <img id="abc-icon" src="/assets/img/ABC.png" alt="abc" />
+        </div>
+
+        <ul>
+          <li>FROM</li>
+          <li>COPY</li>
+          <li>RUN</li>
+
+          <p>Congrats :)! Agora sabe alguns comandos de um Dockerfile!</p>
+        </ul>
+      </section>
     </main>
+
+    <img class="ocean" src="/assets/img/ocean.png" alt="oceano" />
+
+    <footer>
+      <p>GoDocker! - Caderno de Comandos</p>
+    </footer>
   </body>
 </html>

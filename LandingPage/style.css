@@ -1,186 +1,184 @@
 @font-face {
-    font-family: jua;
-    src: url(../Jua-Regular.ttf);
+  font-family: jua;
+  src: url(../Jua-Regular.ttf);
 }
 @font-face {
-    font-family: regular;
-    src: url(../Poppins/Poppins-Regular.ttf);
+  font-family: regular;
+  src: url(../Poppins/Poppins-Regular.ttf);
 }
 @font-face {
-    font-family: pp-bold;
-    src: url(../Poppins/Poppins-Bold.ttf);
+  font-family: pp-bold;
+  src: url(../Poppins/Poppins-Bold.ttf);
 }
-body{
-    margin: 0;
-    background-color: white;
-    overflow-x: hidden;
-    font-family: regular;
+body {
+  margin: 0;
+  background-color: white;
+  overflow-x: hidden;
+  font-family: regular;
 }
 
 header {
-    font-family: "Jua";
-    color: #ffffff;
-    background-color: #198ce0;
-    padding: 1px;
-    font-size: 24px;
+  font-family: "Jua";
+  color: #ffffff;
+  background-color: #198ce0;
+  padding: 1px;
+  font-size: 24px;
 }
-header p{
-    margin-left: 67px;
+header p {
+  margin-left: 67px;
 }
-  
+
 header span {
-    color: #adddff;
+  color: #adddff;
 }
 
 footer {
-    margin: 0;
-    margin-top: 20px;
-    background-color: #198ce0;
-    color: #ffffff;
-    font-family: "Jua";
-    text-align: center;
-    font-size: 24px;
-    padding: 5px;
+  margin: 0;
+  margin-top: 20px;
+  background-color: #198ce0;
+  color: #ffffff;
+  font-family: "Jua";
+  text-align: center;
+  font-size: 24px;
+  padding: 5px;
 }
-#topo{
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    top: 100px;
-    margin: 20px;
+#topo {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  top: 100px;
+  margin: 20px;
 }
-#godocker{
-    display: inline-block;
-    position: absolute;
-    top: -95px;
-    left: 45%;
-    transform: translateX(-50%);
-    scale: 0.9;
+#godocker {
+  display: inline-block;
+  position: absolute;
+  top: -95px;
+  left: 45%;
+  transform: translateX(-50%);
+  scale: 0.9;
 }
-#bv{
-    display: inline-block;
-    position: absolute;
-    top: 70px;
-    left: 180px;
-    font-size: 36px;
+#bv {
+  display: inline-block;
+  position: absolute;
+  top: 70px;
+  left: 180px;
+  font-size: 36px;
 }
-#do{
-    display: inline-block;
-    position: absolute;
-    top: 350px;
-    left: 180px;
-    font-size: 32px;
+#do {
+  display: inline-block;
+  position: absolute;
+  top: 350px;
+  left: 180px;
+  font-size: 32px;
 }
-#topo span{
-    color: #198CE0;
+#topo span {
+  color: #198ce0;
 }
-#comecar{
-    display: inline-block;
-    position: absolute;
-    top: 500px;
-    left: 180px;
-    font-size: 40px;
-    background-color: #198CE0;
-    color: white;
-    border: none;
-    padding: 20px 30px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.3s ease;
+#comecar {
+  display: inline-block;
+  position: absolute;
+  top: 500px;
+  left: 180px;
+  font-size: 40px;
+  background-color: #198ce0;
+  color: white;
+  border: none;
+  padding: 20px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
-#meio{
-    position: relative;
-    left: 180px;
-    margin-top: 230px;
+#meio {
+  position: relative;
+  left: 180px;
+  margin-top: 230px;
 }
-#meio p{
-    font-size: 24px;
+#meio p {
+  font-size: 24px;
 }
-#meio h2{
-    font-size: 36px;
-    font-family: regular;
-    
+#meio h2 {
+  font-size: 36px;
+  font-family: regular;
 }
-#meio h3{
-    font-size: 36px;
-    font-family: regular;
-    color: #198CE0;
+#meio h3 {
+  font-size: 36px;
+  font-family: regular;
+  color: #198ce0;
 }
-#meio span{color: #198CE0;}
-
-pre{
-    font-family: regular;
-    font-size: 32px;
+#meio span {
+  color: #198ce0;
 }
 
-.jua{
-    font-family: jua;
+pre {
+  font-family: regular;
+  font-size: 32px;
 }
-.destaque{
-    font-family: pp-bold;
+
+.jua {
+  font-family: jua;
 }
-#docker-lp{
-    position: absolute;
-    display: inline-block;
-    top: 70px;
-    right: 130px;
-    width: min-content;
-    height: min-content;
+.destaque {
+  font-family: pp-bold;
 }
-#fotos{
-    display: flex;
-    height: 340px;
-    width: 90%;
-    position: relative;
-    left: -7%;
-    justify-content: space-between;
+#docker-lp {
+  position: absolute;
+  display: inline-block;
+  top: 70px;
+  right: 130px;
+  width: min-content;
+  height: min-content;
 }
-.foto{
-    height: 252px;
-    width: 252px;
-    border-radius: 50%;
+#fotos {
+  display: flex;
+
+  width: 90%;
+  justify-content: space-evenly;
 }
-.pessoa p{
-    text-align: center;
-    
+.foto {
+  height: 200px;
+  width: 200px;
+}
+.pessoa p {
+  text-align: center;
 }
 #comecar:hover {
-    scale: 1.1;
-    cursor: pointer;
+  scale: 1.1;
+  cursor: pointer;
 }
-.documentacao{
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    height: 400px;
+.documentacao {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 400px;
 }
-.doc{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: regular;
-    font-size: 24px;
+.doc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: regular;
+  font-size: 24px;
 }
-.conhecimento{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: regular;
-    font-size: 24px;    
+.conhecimento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: regular;
+  font-size: 24px;
 }
-#ultima::after{
-    position: absolute;
-    content: url(../assets/img/interrogacao.svg);
-    bottom: 280px;
-    right: 400px;
+#ultima::after {
+  position: absolute;
+  content: url(../assets/img/interrogacao.svg);
+  bottom: 280px;
+  right: 400px;
 }
-button{
-    width: 600px;
-    height: 112px;
-    font-size: 36px;
-    background-color: #198CE0;
-    color: white;
-    border: none;
-    border-radius: 13px;
+button {
+  width: 600px;
+  height: 112px;
+  font-size: 36px;
+  background-color: #198ce0;
+  color: white;
+  border: none;
+  border-radius: 13px;
+  font-family: regular;
 }

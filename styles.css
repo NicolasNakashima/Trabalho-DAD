@@ -96,7 +96,8 @@ strong {
   box-shadow: 1px 1px 10px rgba(0, 71, 121, 0.3);
 }
 
-#imagem-icon, #conteiner-icon {
+#imagem-icon,
+#conteiner-icon {
   position: relative;
   top: 10px;
   margin: 0px 5px;
@@ -127,7 +128,8 @@ strong {
   display: inline-block;
 }
 
-#engrenagemicon, #pensative-icon {
+#engrenagemicon,
+#pensative-icon {
   position: relative;
   top: 10px;
   margin: 0px 5px;
@@ -243,6 +245,7 @@ li {
 footer {
   margin: 0;
   margin-top: 20px;
+  width: 100%;
   background-color: #198ce0;
   color: #ffffff;
   font-family: "Jua";
@@ -280,7 +283,8 @@ header span {
   margin-bottom: 30px;
 }
 
-#conteiner-docker {}
+#conteiner-docker {
+}
 #image-of-a-sus-whale {
   width: 25%;
 }
@@ -307,11 +311,10 @@ header span {
   width: 25%;
 }
 
-
 .topicos-subtitulos {
   font-size: 24px;
   font-family: "Poppins-bold";
-  color: #198CE0;
+  color: #198ce0;
 }
 
 #aprenda-comandos {
@@ -333,4 +336,123 @@ header span {
 #imagemIA {
   width: 50%;
   border-radius: 20px;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 4px solid #198ce0;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  border-radius: 200px;
+}
+
+input[type="radio"]:checked {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 4px solid #198ce0;
+  background-color: #007bff;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  border-radius: 200px;
+}
+
+form h3 {
+  background-color: #198ce0;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.questao {
+  margin-bottom: 20px;
+}
+
+form div {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  margin: auto;
+  width: 80%;
+}
+
+#enviar {
+  margin: auto;
+  margin-top: 1rem;
+  display: block;
+  padding: 20px;
+  border: none;
+  background-color: #007bff;
+  border-radius: 6px;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#enviar:hover {
+  background-color: #005b9d;
+  transition: background-color 0.5s ease;
+}
+
+#enviar:not(:hover) {
+  transition: background-color 0.5s ease;
+}
+
+#caderno-icon {
+  width: 200px;
+  margin: 20px;
+}
+
+.conteudo-box h2 {
+  color: #005b9d;
+}
+
+code {
+  background-color: rgb(194, 232, 255);
+  margin-top: 2px;
+  padding: 5px;
+}
+
+.comando {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 30px;
+
+  background-color: #c4e6ff;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+.comand-title {
+  color: #004779;
+  font-weight: bold;
+}
+
+.example-command {
+  color: #005b9d;
+}
+
+pesquisa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
 }
