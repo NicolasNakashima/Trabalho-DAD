@@ -244,8 +244,7 @@ li {
 
 footer {
   margin: 0;
-  margin-top: 20px;
-  width: 100%;
+  width: 99%;
   background-color: #198ce0;
   color: #ffffff;
   font-family: "Jua";
@@ -395,6 +394,7 @@ form div {
   font-size: 24px;
   font-weight: 700;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 
 #enviar:hover {
@@ -455,4 +455,73 @@ input {
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 16px;
+}
+
+.area-quiz {
+  background-color: white;
+  width: 100%;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+
+.area-quiz div {
+  background-color: #198ce0;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.area-quiz h4 {
+  color: #198ce0;
+  text-align: center;
+}
+
+.area-quiz p {
+  text-align: center;
+}
+
+.area-quiz span {
+  color: #198ce0;
+  font-weight: bold;
+}
+
+.area-quiz .iniciar-teste {
+  background-color: #198ce0;
+  width: 30%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:hover,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+.disabled_button {
+}
+
+.cursor-none {
+  cursor: not-allowe;
 }
