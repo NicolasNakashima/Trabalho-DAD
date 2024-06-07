@@ -20,18 +20,12 @@ search.addEventListener("keyup", () => {
     valorComando = valorComando.substring(0, tamanhoCampo);
 
     let command = comandos[i];
-    let contador = nomeComandos.length;
 
     if (valorCampo != valorComando) {
       command.style.display = "none";
-      contador--;
     } else {
       command.style.display = "flex";
       command.style.flexDirection = "column";
-    }
-
-    if (contador < nomeComandos.length) {
-      textoNulo.style.display = "flex";
     }
   }
 });
