@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DockerCompose</title>
+
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="/assets/img/godocker.svg"
+      type="image/x-icon"
+    />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <a href="/DockerMap/index.html">
+        <p>G<span>o</span>D<span>o</span>cker!</p>
+      </a>
+    </header>
+    <main>
+      <h1>4. Docker-Compose</h1>
+
+      <img id="docker-logo" src="/assets/img/Lula.png" alt="" />
+
+      <div class="titulo-topicos" id="O que e Docker-Compose-titulo">
+        <h1>O que é Docker-Compose</h1>
+        <img id="engrenagemicon" src="/assets/img/tinta.png" alt="" />
+      </div>
+
+      <article id="O que e Docker-Compose-conteudo" class="conteudo-box invisivel">
+        <p>
+          Parabéns por chegar ao 4° assunto do GoDocker! Agora iremos explorar o assunto de Docker-Compose. 
+        </p>
+
+        <p>
+          Docker compose é uma ferramenta para definir e executar aplicativos Docker de vários contêineres, com o Compose, você usa um arquivo YAML para configurar os serviços do seu aplicativo. O Compose funciona em todos os ambientes: DEV, QA e PROD. Com um único comando, você cria e inicia todos os serviços de sua configuração.
+        </p>
+
+       
+
+        <img id="DockerComposeLine" src="/assets/img/DockerComposeLine.png" alt="godocker!" />
+      </article>
+
+      <div id="Script-titulo" class="titulo-topicos">
+        <h1>Script</h1>
+        <img
+          id="docker-icon-topic"
+          src="/assets/img/File-Ym-1--Streamline-Ultimate.svg.png"
+          alt="Logo do Docker"
+        />
+      </div>
+
+      <article id="Script-conteudo" class="conteudo-box invisivel">
+        <p>
+          Vamos entender como podemos montar este script! O primeiro passo, é se ambientar com alguns comandos e seus respectivos significados. 
+        </p>
+
+        <img
+          id="aplicacao-exemplo"
+          src="/assets/img/Script1.png"
+          alt="Exemplo de aplicação"
+        />
+
+        <p>
+          Neste exemplo acima, temos um script de Docker Compose que está configurando dois containers: Container Web e Container Redis. Este script também define a variável de ambiente e a porta de acesso.
+        </p>
+
+        <p>
+          Então, explicando o exemplo passo a passo:
+        </p>
+
+        <ul>
+          <li>
+            <strong>Linha 1:</strong>
+            <p>
+              Esta linha define o nome do arquivo Docker Compose. No exemplo, o nome do arquivo é docker-compose.yml.
+            </p>
+          </li>
+
+          <li>
+            <strong>Linha 2:</strong>
+            <p>
+              Define a versão do arquivo Docker Compose (no exemplo, a versão 3).
+            </p>
+          </li>
+
+          <li>
+            <strong>Linha 3:</strong>
+            <p>
+              Marca o início da seção de serviços do arquivo.
+            </p>
+          </li>
+          <li>
+            <strong>Linha 4:</strong>
+            <p>
+              Define um serviço com o nome especificado (no exemplo, web).
+            </p>
+          </li>
+          <li>
+            <strong>Linha 5:</strong>
+            <p>
+              Indica como construir a imagem do container (no exemplo, a partir do diretório atual).
+            </p>
+          </li>
+          <li>
+            <strong>Linha 6/7:</strong>
+            <p>
+              Define o mapeamento de portas (no exemplo, expõe a porta 5000 do host para a porta 5000 do container).
+            </p>
+          </li>
+
+          <li>
+            <strong>Linha 8/9:</strong>
+            <p>
+              Define um volume para o container (no exemplo, mapeia o diretório atual para o diretório /code dentro do container).
+            </p>
+          </li>
+
+            <strong>Linha 10/11:</strong>
+            <p>
+              Define uma variável de ambiente para o container (no exemplo, define FLASK_ENV como development).
+            </p>
+          </li>
+
+          <li>
+            <strong>Linha 12:</strong>
+            <p>
+              Define outro serviço com o nome especificado (no exemplo, redis).
+            </p>
+          </li>
+          <li>
+            <strong>Linha 13:</strong>
+            <p>
+              Define a imagem a ser utilizada para o container (no exemplo, a imagem oficial redis:alpine).
+            </p>
+          </li>
+          
+        </ul>
+      </article>
+
+      <div id="Como Usar-titulo" class="titulo-topicos">
+        <h1>Como Usar</h1>
+        <img
+          id="docker-icon-topic"
+          src="/assets/img/computador.png"
+          alt="Logo do Docker"
+        />
+      </div>
+
+      <article
+        id="Como Usar-conteudo"
+        class="conteudo-box invisivel"
+      >
+        <p>
+          No terminal onde seu docker-compose.yml está localizado, iremos criar uma imagem docker a partir do nosso arquivo com o seguinte comando:
+        </p>
+
+        <img
+          id="aplicacao-exemplo"
+          src="/assets/img/Use1.png"
+          alt="Exemplo de aplicação"
+        />
+
+        <p>
+          Para enviar as imagens Docker dos serviços definidos no seu arquivo docker-compose.yml para o Docker Hub, utilize o seguinte comando:
+        </p>
+
+        <img
+          id="aplicacao-exemplo"
+          src="/assets/img/Use2.png"
+          alt="Exemplo de aplicação"
+        />
+
+        <p>
+          Agora que já criamos nossa imagem e publicamos ela no nosso Docker Hub, temos que iniciar os nossos serviços definidos no nosso docker-compose.yml, para realizar isso utilizamos o seguinte comando:
+        </p>
+
+        <img
+          id="aplicacao-exemplo"
+          src="/assets/img/Use3.png"
+          alt="Exemplo de aplicação"
+        />
+
+        <p>
+          Caso queira rodar em segundo plano utilize -d no docker-compose up:
+        </p>
+
+        <img
+          id="aplicacao-exemplo"
+          src="/assets/img/Use4.png"
+          alt="Exemplo de aplicação"
+        />
+
+       
+      </article>
+
+      <section
+        class="vocabulario-aprendido invisivel"
+        id="vocabulario-aprendido"
+      >
+        <div>
+          <h2>Vocabulário Aprendido</h2>
+          <img id="abc-icon" src="/assets/img/ABC.png" alt="abc" />
+        </div>
+
+        <ul>
+          <li>O QUE É DOCKER COMPOSE</li>
+          <li>SCRIPT DE DOCKER COMPOSE</li>
+          <li>COMO USAR</li>
+
+          <p>Congrats :)! Você acabou o conteúdo!</p>
+        </ul>
+      </section>
+
+      <section class="area-quiz">
+        <div>
+          <h2>Testando os seus conhecimentos!</h2>
+          <img src="/assets/img/star-icon.png" alt="" />
+        </div>
+
+        <h4>Mãos na Massa!</h4>
+
+        <p>
+          Hora de testar os conhecimentos obtidos! Que tal um pequeno quiz
+          <br />
+          sobre <span><strong>DOCKER-COMPOSE</strong></span>
+        </p>
+
+        <a href="/Quizes/quizdockercompose.html"
+          ><div class="iniciar-teste">INICIAR TESTE</div></a
+        >
+
+        <p>
+          Parabéns por finalizar nossos conteúdos fique à vontade para voltar para 
+          <a href="/PaginaInicial/index.html"
+            ><strong>PÁGINA INICIAL</strong></a
+          >
+        </p>
+      </section>
+
+      <!-- <img id="wavetest" src="/assets/img/wavetest.png" alt=""> -->
+      <img class="ocean" src="/assets/img/ocean.png" alt="oceano" />
+    </main>
+
+    <footer>
+      <p>GoDocker! - Caderno de Comandos</p>
+    </footer>
+  </body>
+</html>
