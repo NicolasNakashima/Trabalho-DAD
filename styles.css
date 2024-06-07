@@ -520,8 +520,47 @@ a:active {
 }
 
 .disabled_button {
+  pointer-events: none;
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
-.cursor-none {
-  cursor: not-allowe;
+.disabled_body {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+pesquisa {
+  margin: 20px;
+  background-color: #adddff;
+  border-radius: 10px;
+  border: 2px solid #198ce0;
+  padding: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px; /* Adjust the value for desired border radius */
+  background-color: #198ce0; /* Blue background color */
+  color: white; /* White text color */
+  font-size: 16px;
+}
+
+input[type="text"]::placeholder {
+  color: #ffffff; /* Placeholder color */
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(7, 94, 187, 0.7); /* Blue shadow on focus */
 }

@@ -69,13 +69,38 @@
         </div>
 
         <div class="comando">
-          <div class="comand-title">Lista de exeuções</div>
+          <div class="comand-title">Lista de execuções</div>
           <code>docker ps</code>
+        </div>
+
+        <div class="comando">
+          <div class="comand-title">
+            Informações sobre um contêiner em execução
+          </div>
+          <code>docker inspect</code>
+        </div>
+
+        <div class="comando">
+          <div class="comand-title">
+            Executar comandos em um contêiner em execução
+          </div>
+          <code>docker exec &lt;nomeContêiner&gt; bash</code>
+
+          <div class="example-command">
+            O comando docker exec -it caixa bash abre um ambiente bash para
+            manuseamento do contêiner "caixa"
+          </div>
         </div>
 
         <div class="comando">
           <div class="comand-title">Rodar imagens</div>
           <code>docker run</code>
+        </div>
+
+        <div class="comando">
+          <div class="comand-title">Listar as portas de um contêiner</div>
+          <code>docker port &lt;idDoContêiner&gt;</code>
+          <div class="example-command">docker port 8czeb3274</div>
         </div>
 
         <div class="comando">
@@ -96,6 +121,25 @@
         </div>
 
         <div class="comando">
+          <div class="comand-title">Rodar um docker-compose</div>
+          <code>docker-compose up;</code>
+        </div>
+
+        <div class="comando">
+          <div class="comand-title">
+            Status dos contêineres de um docker-compose em execução
+          </div>
+          <code>docker-compose ps;</code>
+        </div>
+
+        <div class="comando">
+          <div class="comand-title">
+            Rodar um único serviço do docker-compose
+          </div>
+          <code>docker-compose run service_name </code>
+        </div>
+
+        <div class="comando">
           <div class="comand-title">
             Parâmetro para interagir com o terminal (junção de -i + -t)
           </div>
@@ -107,6 +151,11 @@
           <div class="comand-title">Ambiente da interação</div>
           <code>bash</code>
           <div class="example-command">docker run -it ubuntu bash</div>
+        </div>
+
+        <div class="comando">
+          <div class="comand-title">Logar no Dockerhub com terminal</div>
+          <code>docker login docker.io</code>
         </div>
 
         <div id="texto-nulo" class="comando">Nenhum resultado encontrado.</div>
