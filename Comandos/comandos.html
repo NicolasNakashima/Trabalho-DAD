@@ -13,11 +13,25 @@
     />
 
     <script src="comandos.js" defer></script>
+    <script defer src="/assets/js/menu.js"></script>
   </head>
   <body>
     <header>
-      <p>G<span>o</span>D<span>o</span>cker!</p>
+      <div id="burguinho">
+        <img src="../assets/img/burguinho.svg" alt="" onclick="abrirMenu()" />
+      </div>
+      <p>
+        <a href="/DockerMap/index.html">G<span>o</span>D<span>o</span>cker!</a>
+      </p>
     </header>
+    <div id="menu" class="escondido">
+      <ul>
+        <li><a href="/LandingPage/index.html">HOME</a></li>
+        <li><a href="#">EXERCÍCIOS</a></li>
+        <li><a href="/Comandos/comandos.html">CADERNO</a></li>
+      </ul>
+      <img src="../assets/img/whale.png" alt="" class="whalemenu" />
+    </div>
     <main>
       <h1>Caderno de Comandos</h1>
 

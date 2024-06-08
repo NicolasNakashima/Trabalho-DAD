@@ -6,6 +6,7 @@
     <title id="tema">Quiz 1 - O que é Docker?</title>
 
     <script defer src="quizes.js"></script>
+    <script defer src="/assets/js/menu.js"></script>
 
     <link rel="stylesheet" href="/styles.css" />
     <link
@@ -16,10 +17,21 @@
   </head>
   <body>
     <header>
-      <a href="/DockerMap/index.html">
-        <p>G<span>o</span>D<span>o</span>cker!</p>
-      </a>
+      <div id="burguinho">
+        <img src="../assets/img/burguinho.svg" alt="" onclick="abrirMenu()" />
+      </div>
+      <p>
+        <a href="/DockerMap/index.html">G<span>o</span>D<span>o</span>cker!</a>
+      </p>
     </header>
+    <div id="menu" class="escondido">
+      <ul>
+        <li><a href="/LandingPage/index.html">HOME</a></li>
+        <li><a href="#">EXERCÍCIOS</a></li>
+        <li><a href="/Comandos/comandos.html">CADERNO</a></li>
+      </ul>
+      <img src="../assets/img/whale.png" alt="" class="whalemenu" />
+    </div>
 
     <main>
       <h1>1. O que é Docker</h1>
