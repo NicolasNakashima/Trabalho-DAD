@@ -31,6 +31,10 @@ main h1 {
   width: 40%;
 }
 
+#DockerComposeLine{
+  width: 90%;
+}
+
 #docker-logo:hover {
   width: 23%;
   transition: width 0.3s ease;
