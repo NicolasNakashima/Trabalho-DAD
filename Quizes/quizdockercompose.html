@@ -34,7 +34,7 @@
     </div>
 
     <main>
-      <h1>1. O que é Docker?</h1>
+      <h1>4. Docker-Compose</h1>
 
       <div id="pontos">
         <h4 class="invisivel">Pontuação Final: <span>0</span></h4>
@@ -55,10 +55,10 @@
               class="questoes"
             />
             <label for="op1q1"
-              >O Docker trabalha com o conceito de virtualização de contêineres,
-              ou seja, inserir um ambiente em um contêiner significa
-              encapsulá-lo e torná-lo mais portável para uso da aplicação
-              principal.</label
+              >Permite definir e gerenciar aplicativos Docker multi-contêiner
+              através de um arquivo YAML, facilitando a configuração e a
+              orquestração dos serviços necessários para o funcionamento de um
+              aplicativo.</label
             >
           </div>
 
@@ -70,10 +70,9 @@
               class="questoes"
             />
             <label for="op2q1"
-              >O Docker trabalha com o conceito de separação. Uma vez que as
-              aplicações estão isoladas, cada uma em seu ambiente, não importa o
-              que aconteça, a aplicação principal nunca será totalmente
-              afetada.</label
+              >Permite criar imagens Docker a partir de arquivos .exe,
+              automatizando o processo de build e otimizando as etapas de
+              criação de imagens para contêineres.</label
             >
           </div>
 
@@ -85,10 +84,9 @@
               class="questoes"
             />
             <label for="op3q1"
-              >O Docker trabalha com o conceito de virtualização, que diz que
-              uma vez que os ambientes estão juntos e dependentes um do outro, a
-              aplicação principal se potencializará, funcionando
-              totalmente.</label
+              >Fornece uma interface gráfica completa para gerenciar contêineres
+              Docker, permitindo aos usuários visualizar, iniciar, parar e
+              monitorar contêineres diretamente do navegador.</label
             >
           </div>
 
@@ -100,9 +98,9 @@
               class="questoes"
             />
             <label for="op4q1"
-              >O Docker trabalha com o conceito de encapsulamento de aplicações.
-              As aplicações distintas podem interagir entre si com total
-              dependência.</label
+              >Garante a segurança dos contêineres Docker em ambientes de
+              produção, implementando políticas de segurança e verificações
+              contínuas para evitar vulnerabilidades.</label
             >
           </div>
         </div>
@@ -120,9 +118,10 @@
               class="questoes"
             />
             <label for="op1q2"
-              >O Docker não oferece nenhuma vantagem em cima das Máquinas
-              Virtuais (MV’s), uma vez que virtualiza o sistema operacional
-              inteiro ao invés da aplicação de maneira isolada.</label
+              >Um Dockerfile é um script que contém uma série de instruções para
+              criar uma imagem Docker, enquanto o Docker Compose é uma
+              ferramenta para definir e gerenciar aplicativos multi-contêiner
+              usando um arquivo YAML.</label
             >
           </div>
 
@@ -134,10 +133,9 @@
               class="questoes"
             />
             <label for="op2q2"
-              >O Docker oferece a vantagem de economia de recursos e
-              rentabilidade já que virtualiza ambientes em contêineres de
-              maneira a compartilhar somente o kernel do sistema operacional
-              hospedeiro.</label
+              >Um Dockerfile é usado para configurar redes e volumes Docker,
+              enquanto o Docker Compose é utilizado para construir imagens
+              Docker a partir de código-fonte.</label
             >
           </div>
 
@@ -149,11 +147,9 @@
               class="questoes"
             />
             <label for="op3q2"
-              >O conceito de isolamento diz respeito a encapsular os ambientes
-              de maneira que os torne independentes um do outro, fazendo com que
-              a aplicação principal não seja afetada totalmente quando houver um
-              imprevisto com algum ambiente. Isso garante uma aplicação mais
-              previsível e confiável.
+              >Um Dockerfile define a infraestrutura necessária para rodar um
+              aplicativo em produção, enquanto o Docker Compose é utilizado
+              apenas para desenvolvimento local.
             </label>
           </div>
 
@@ -165,10 +161,9 @@
               class="questoes"
             />
             <label for="op4q2"
-              >Na verdade, as Máquinas Virtuais são superiores ao Docker. Elas
-              trabalham com mais economia de recursos enquanto o Docker busca
-              virtualizar os ambientes em contêineres, ocupando um espaço muito
-              maior.
+              >Um Dockerfile é um arquivo de configuração para orquestrar
+              serviços em clusters Kubernetes, enquanto o Docker Compose é uma
+              ferramenta que converte contêineres Docker em máquinas virtuais.
             </label>
           </div>
         </div>
@@ -187,10 +182,9 @@
               class="questoes"
             />
             <label for="op1q3"
-              >O conceito de isolamento significa que os ambientes utilizados
-              estarão um dentro do outro, oferecendo uma abstração de camadas
-              maior, fazendo com que a aplicação principal esteja completamente
-              isolada.</label
+              >O Docker Compose trabalha com arquivos JSON, que são usados para
+              definir a estrutura de diretórios e permissões de acesso dentro
+              dos contêineres.</label
             >
           </div>
 
@@ -202,10 +196,10 @@
               class="questoes"
             />
             <label for="op2q3"
-              >O conceito de isolamento significa que os ambientes utilizados
-              estarão cada um em um computador, isolando-as totalmente. Isso
-              quer dizer que você precisará de vários computadores para formar a
-              aplicação principal.</label
+              >O Docker Compose trabalha com arquivos YAML, que permitem
+              descrever os serviços, redes e volumes necessários para a
+              aplicação de forma declarativa e legível. Sua organização se dá
+              organizando Informações hierarquicamente com recuo.</label
             >
           </div>
 
@@ -217,11 +211,9 @@
               class="questoes"
             />
             <label for="op3q3"
-              >O conceito de isolamento diz respeito a encapsular os ambientes
-              de maneira que os torne independentes um do outro, fazendo com que
-              a aplicação principal não seja afetada totalmente quando houver um
-              imprevisto com algum ambiente. Isso garante uma aplicação mais
-              previsível e confiável.</label
+              >O Docker Compose trabalha com arquivos XML, que são utilizados
+              para configurar a segurança e criptografia dos dados armazenados
+              nos contêineres.</label
             >
           </div>
 
@@ -233,9 +225,9 @@
               class="questoes"
             />
             <label for="op4q3"
-              >O isolamento do Docker quer dizer isolar cada etapa de
-              virtualização de contêineres em uma parte do processo, ou seja,
-              virtualizar um ambiente passo a passo.</label
+              >O Docker Compose trabalha com arquivos INI, que especificam as
+              variáveis de ambiente e as dependências externas dos contêineres
+              Docker.</label
             >
           </div>
           <button id="enviar" type="submit">FINALIZAR QUIZ</button>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="shortcut icon"
       href="/assets/img/godocker.svg"
@@ -13,54 +13,94 @@
     />
     <script src="oqueedocker.js" defer></script>
   </head>
-  <body style="background-color: white;">
+  <body style="background-color: white">
     <header>
       <p>G<span>o</span>D<span>o</span>cker!</p>
     </header>
     <main>
-        <div id="topo">
-            <img src="../assets/img/LPfundo.svg" alt="">
-            <img src="../assets/img/godocker.svg" alt="" id="godocker">
-            <p id="bv">Olá, <span>Usuário</span>!<br>Boas-vindas ao</p> 
-            <p id="do">Seu guia definitivo sobre o básico de <br><span>docker!</span></p>
-            <a href="/DockerMap/index.html"><button id="comecar">Começar a aprender!</button></a>
+      <div id="topo">
+        <img src="../assets/img/LPfundo.svg" alt="" />
+        <img src="../assets/img/godocker.svg" alt="" id="godocker" />
+        <p id="bv">Olá, <span>Usuário</span>!<br />Boas-vindas ao</p>
+        <p id="do">
+          Seu guia definitivo sobre o básico de <br /><span>docker!</span>
+        </p>
+        <a href="/DockerMap/index.html"
+          ><button id="comecar">Começar a aprender!</button></a
+        >
+      </div>
+      <div id="meio">
+        <h2>Sobre o <span class="jua">GoDocker!</span></h2>
+        <br />
+        <div id="sobre-godocker">
+          <p>
+            O GoDocker! entrega a você a mais forma
+            <span class="destaque">eficaz e fácil</span> de aprender sobre essa
+            tecnologia essencial no dia a dia dos desenvolvedores. Nosso
+            objetivo é que você saia de cada sessão de aprendizado entendendo o
+            conteúdo de maneira dinâmica. Para facilitar a compreensão dos
+            assuntos, contamos com
+            <span class="destaque">exercícios gamificados</span>
+            para cada conteúdo lecionado.
+          </p>
+          <img
+            id="img-docker-game"
+            src="../assets/img/docker-game-landpage.png"
+            alt="imagem do docker"
+            id="docker-lp"
+          />
         </div>
-        <div id="meio">
-          <h2>Sobre o <span class="jua">GoDocker!</span></h2>
-          <br>
-          <p><pre>
-O GoDocker! entrega a você a mais forma
-<span class="destaque">eficaz e fácil</span> de aprender sobre essa
-tecnologia essencial no dia a dia dos
-desenvolvedores. Nosso objetivo é que
-você saia de cada sessão de aprendizado
-entendendo o conteúdo de maneira
-dinâmica.
-Para facilitar a compreensão dos assuntos,
-contamos com <span class="destaque">exercícios gamificados</span>
-para cada conteúdo lecionado.
-          </pre></p>
-          <img src="../assets/img/docker-game-landpage.png" alt="imagem do docker" id="docker-lp">
-          <h2>Desenvolvimento</h2>
-          <br>
-          <h3>Desenvolvedores:</h3>
-          <div id="fotos">
-            <div class="pessoa"><img src="../assets/img/laura.png" alt="" class="foto"><p>Laura Farias</p></div>
-            <div class="pessoa"><img src="../assets/img/daichi.png" alt="" class="foto"><p>Nícolas Daichi</p></div>
-            <div class="pessoa"><img src="../assets/img/ryan.png" alt="" class="foto"><p>Ryan Evangelista</p></div>
-            <div class="pessoa"><img src="../assets/img/samuel.png" alt="" class="foto"><p>Samuel Xavier</p></div>
-          </div>
-          <h3>Recursos utilizados</h3>
-          <div class="documentacao">
-            <div class="doc"><img src="../assets/img/documentacao-oficial.png" alt=""><p>Documentação Oficial</p></div>
-            <div class="conhecimento"><img src="../assets/img/conhecimento-previo.png" alt=""><p>Conhecimento Prévio</p></div>
-          </div>
-          <h3>Do que eu preciso para começar a<br>aprender?</h3>
-          <p id="ultima">Tudo o que você precisa para começar a<br>sua jornada no GoDocker! é ter o Docker<br>Desktop instalado. Para isso fizemos um<br>pequeno tutorial de como você pode fazer isso.</p>
-          <button><strong>Instalar o Dockerdesktop</strong></button>
-          <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h2>Desenvolvimento</h2>
+        <div id="development">
+          <p>
+            O desenvolvimento de nosso website se iniciou por conta de um
+            Trabalho de Desenvolvimento de Aplicação Dinâmica (DAD). Foram um
+            total de 8 aulas para aplicarmos na prática nossos conhecimentos em
+            Javascript, HTML, CSS e Docker.
+          </p>
         </div>
-        
+        <br />
+        <h3>Desenvolvedores:</h3>
+        <div id="fotos">
+          <div class="pessoa">
+            <img src="../assets/img/laura.png" alt="" class="foto" />
+            <p>Laura Farias</p>
+          </div>
+          <div class="pessoa">
+            <img src="../assets/img/daichi.png" alt="" class="foto" />
+            <p>Nícolas Daichi</p>
+          </div>
+          <div class="pessoa">
+            <img src="../assets/img/ryan.png" alt="" class="foto" />
+            <p>Ryan Evangelista</p>
+          </div>
+          <div class="pessoa">
+            <img src="../assets/img/samuel.png" alt="" class="foto" />
+            <p>Samuel Xavier</p>
+          </div>
+        </div>
+        <h3>Recursos utilizados</h3>
+        <div class="documentacao">
+          <div class="doc">
+            <img src="../assets/img/documentacao-oficial.png" alt="" />
+            <p>Documentação Oficial</p>
+          </div>
+          <div class="conhecimento">
+            <img src="../assets/img/conhecimento-previo.png" alt="" />
+            <p>Conhecimento Prévio</p>
+          </div>
+        </div>
+        <h3>Do que eu preciso para começar a<br />aprender?</h3>
+        <p id="ultima">
+          Tudo o que você precisa para começar a<br />sua jornada no GoDocker! é
+          ter o Docker<br />Desktop instalado. Para isso fizemos um<br />pequeno
+          tutorial de como você pode fazer isso.
+        </p>
+        <a href=""
+          ><button><strong>Instalar o Dockerdesktop</strong></button></a
+        >
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      </div>
     </main>
     <footer>
       <p>GoDocker! 2024 - Todos os Direitos Reservados</p>

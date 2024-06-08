@@ -7,10 +7,11 @@ console.log(tema);
 console.log(pontos.textContent);
 
 const respostasCorrestas = {
-  //q1 q2 q3
+  //q1 q2 q3 q4
   1: [1, 2, 3], // --> QUIZ 1 - questão1 resposta correta: opção 1
   2: [3, 2, 1], // --> QUIZ 2 - questão1 resposta correta: opção 3
   3: [1, 3, 2], // --> QUIZ 3 - questão1 resposta correta: opção 1
+  4: [1, 1, 2], // --> QUIZ 4 - questão1 resposta correta: opção 1
 };
 let pontuacao = 0;
 
