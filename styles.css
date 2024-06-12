@@ -283,6 +283,7 @@ header span {
   display: flex;
   gap: 100px;
   justify-content: center;
+  width: 75%;
   margin-bottom: 30px;
 }
 
@@ -532,6 +533,7 @@ a:active {
 .disabled_body {
   cursor: not-allowed;
   pointer-events: none;
+
   opacity: 0.5;
   cursor: not-allowed;
 }
@@ -545,9 +547,7 @@ pesquisa {
 }
 
 label {
-  display: block;
   margin-bottom: 10px;
-  font-weight: bold;
 }
 
 input[type="text"] {
@@ -567,4 +567,61 @@ input[type="text"]::placeholder {
 input[type="text"]:focus {
   outline: none;
   box-shadow: 0 0 10px rgba(7, 94, 187, 0.7); /* Blue shadow on focus */
+}
+
+#burguinho {
+  position: absolute;
+  height: 78px;
+  width: 78px;
+  left: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#burguinho img {
+  width: 46.5px;
+  height: 31px;
+  cursor: pointer;
+}
+#menu {
+  width: 20%;
+  height: 100vh;
+  background-color: #fff;
+  position: fixed;
+  z-index: 7;
+  top: 0;
+  transition: 0.5s;
+  display: block;
+}
+
+#menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#menu li {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px dashed black;
+}
+
+#menu a {
+  text-decoration: none;
+  color: black;
+  font-family: "Poppins-regular";
+}
+.escondido {
+  left: -20%;
+}
+.aparecido {
+  left: 0;
 }

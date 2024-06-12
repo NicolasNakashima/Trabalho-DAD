@@ -78,6 +78,8 @@ footer {
 #comecar {
   display: inline-block;
   position: absolute;
+  font-family: regular;
+  font-weight: 700;
   top: 500px;
   left: 180px;
   font-size: 40px;
@@ -102,17 +104,12 @@ footer {
   font-family: regular;
 }
 #meio h3 {
-  font-size: 36px;
+  font-size: 32px;
   font-family: regular;
   color: #198ce0;
 }
 #meio span {
   color: #198ce0;
-}
-
-pre {
-  font-family: regular;
-  font-size: 32px;
 }
 
 .jua {
@@ -131,13 +128,12 @@ pre {
 }
 #fotos {
   display: flex;
-
-  width: 90%;
-  justify-content: space-evenly;
+  justify-content: left;
 }
 .foto {
   height: 200px;
   width: 200px;
+  margin-right: 100px;
 }
 .pessoa p {
   text-align: center;
@@ -157,14 +153,14 @@ pre {
   flex-direction: column;
   align-items: center;
   font-family: regular;
-  font-size: 24px;
+  font-size: 16px;
 }
 .conhecimento {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: regular;
-  font-size: 24px;
+  font-size: 16px;
 }
 #ultima::after {
   position: absolute;
@@ -181,4 +177,22 @@ button {
   border: none;
   border-radius: 13px;
   font-family: regular;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#development {
+  width: 65%;
+}
+
+#img-docker-game {
+  width: 30%;
+}
+
+#sobre-godocker {
+  display: flex;
+  flex-direction: row;
+  width: 75%;
 }

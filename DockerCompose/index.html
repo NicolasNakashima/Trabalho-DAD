@@ -12,13 +12,26 @@
       type="image/x-icon"
     />
     <script src="index.js" defer></script>
+    <script src="/assets/js/menu.js"></script>
   </head>
   <body>
     <header>
-      <a href="/DockerMap/index.html">
-        <p>G<span>o</span>D<span>o</span>cker!</p>
-      </a>
+      <div id="burguinho">
+        <img src="../assets/img/burguinho.svg" alt="" onclick="abrirMenu()" />
+      </div>
+      <p>
+        <a href="/DockerMap/index.html">G<span>o</span>D<span>o</span>cker!</a>
+      </p>
     </header>
+    <div id="menu" class="escondido">
+      <ul>
+        <li><a href="/LandingPage/index.html">HOME</a></li>
+        <li><a href="/Exercicios/exercicios.html">EXERCÍCIOS</a></li>
+        <li><a href="/Comandos/comandos.html">CADERNO</a></li>
+      </ul>
+      <img src="../assets/img/whale.png" alt="" class="whalemenu" />
+    </div>
+
     <main>
       <h1>4. Docker-Compose</h1>
 
@@ -206,9 +219,9 @@
         </div>
 
         <ul>
-          <li>O QUE É DOCKER COMPOSE</li>
-          <li>SCRIPT DE DOCKER COMPOSE</li>
-          <li>COMO USAR</li>
+          <li>COMPOSE</li>
+          <li>UP</li>
+          <li>BUILD</li>
 
           <p>Congrats :)! Você acabou o conteúdo!</p>
         </ul>
@@ -233,8 +246,8 @@
         >
 
         <p>
-          Parabéns por finalizar nossos conteúdos fique à vontade para voltar para 
-          <a href="/PaginaInicial/index.html"
+          Parabéns por finalizar nossos conteúdos! Fique à vontade para voltar para a
+          <a href="/DockerMap/index.html"
             ><strong>PÁGINA INICIAL</strong></a
           >
         </p>
@@ -245,7 +258,7 @@
     </main>
 
     <footer>
-      <p>GoDocker! - Caderno de Comandos</p>
+      <p>GoDocker! - Docker compose</p>
     </footer>
   </body>
 </html>
