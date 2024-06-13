@@ -145,8 +145,15 @@ footer p {
 .foto {
   height: 200px;
   width: 200px;
-  margin-right: 100px;
+  margin-right: 20px;
 }
+
+.pessoa {
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+}
+
 .pessoa p {
   text-align: center;
 }
