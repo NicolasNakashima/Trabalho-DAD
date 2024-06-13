@@ -48,7 +48,7 @@ enviar.addEventListener("click", (event) => {
     console.log(JSON.parse(localStorage.getItem("acertos")));
     console.log(JSON.parse(localStorage.getItem("pontuacao")));
 
-    pontos.textContent = pontuacao;
+    pontos.textContent = "Pontos: " + pontuacao;
     pontos.classList.remove("invisivel");
 
     // verificação de acesso
@@ -64,8 +64,8 @@ enviar.addEventListener("click", (event) => {
       localStorage.setItem("verificacao4", JSON.stringify(0));
     }
 
-    document.documentElement.classList.add("disabled_body");
-    document.documentElement.classList.add("");
+    // document.documentElement.classList.add("disabled_body");
+    // document.documentElement.classList.add("");
     enviar.classList.add("disabled_button");
   }
 });

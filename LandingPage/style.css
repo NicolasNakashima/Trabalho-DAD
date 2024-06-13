@@ -23,6 +23,7 @@ header {
   background-color: #198ce0;
   padding: 1px;
   font-size: 24px;
+  user-select: none;
 }
 header p {
   margin-left: 67px;
@@ -34,26 +35,36 @@ header span {
 
 footer {
   margin: 0;
-  margin-top: 20px;
+  height: 40px;
   background-color: #198ce0;
   color: #ffffff;
   font-family: "Jua";
   text-align: center;
-  font-size: 24px;
-  padding: 5px;
+  align-content: center;
+  font-size: 14px;
 }
+
+footer p {
+  margin: 0;
+}
+
+.div-center {
+  display: flex;
+  justify-content: center;
+}
+
 #topo {
   display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
   top: 100px;
-  margin: 20px;
+  width: max-content;
 }
 #godocker {
   display: inline-block;
   position: absolute;
-  top: -95px;
+  top: -15%;
   left: 45%;
   transform: translateX(-50%);
   scale: 0.9;
@@ -61,15 +72,15 @@ footer {
 #bv {
   display: inline-block;
   position: absolute;
-  top: 70px;
-  left: 180px;
+  top: 10%;
+  left: 10%;
   font-size: 36px;
 }
 #do {
   display: inline-block;
   position: absolute;
   top: 350px;
-  left: 180px;
+  left: 10%;
   font-size: 32px;
 }
 #topo span {
@@ -80,8 +91,8 @@ footer {
   position: absolute;
   font-family: regular;
   font-weight: 700;
-  top: 500px;
-  left: 180px;
+  top: 75%;
+  left: 10%;
   font-size: 40px;
   background-color: #198ce0;
   color: white;
@@ -93,8 +104,9 @@ footer {
 }
 #meio {
   position: relative;
+  width: 100vw;
   left: 180px;
-  margin-top: 230px;
+  margin-top: 200px;
 }
 #meio p {
   font-size: 24px;
@@ -188,11 +200,124 @@ button:hover {
 }
 
 #img-docker-game {
-  width: 30%;
+  width: max-content;
+  margin-left: 10%;
 }
 
 #sobre-godocker {
   display: flex;
   flex-direction: row;
-  width: 75%;
+  width: 90%;
+}
+
+#pSobreGoDocker {
+  width: 500px;
+}
+
+#div-sop {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 200px;
+  bottom: -2825px;
+}
+
+#div-sop .sop {
+  background-color: #198ce0;
+  color: #fff;
+  width: fit-content;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 78.4px;
+  font-family: "Jua";
+  color: #ffffff;
+  background-color: #198ce0;
+  padding: 1px;
+  text-align: center;
+  font-size: 24px;
+  z-index: 5;
+}
+header span {
+  color: #adddff;
+}
+
+#burguinho {
+  position: absolute;
+  height: 78px;
+  width: 78px;
+  left: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#burguinho img {
+  width: 46.5px;
+  height: 31px;
+  cursor: pointer;
+}
+#menu {
+  width: 20%;
+  height: 100vh;
+  background-color: #fff;
+  position: fixed;
+  z-index: 7;
+  top: 0;
+  transition: 0.5s;
+  display: block;
+}
+
+#menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#menu li {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px dashed black;
+}
+
+#menu a {
+  text-decoration: none;
+  color: black;
+  font-family: "regular";
+}
+.escondido {
+  left: -20%;
+}
+.aparecido {
+  left: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:hover,
+a:active {
+  color: inherit;
+  text-decoration: none;
 }
