@@ -3,12 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exercicios</title>
+    <title>GoDocker! - Exercicios</title>
     <link rel="stylesheet" href="exercicios.css" />
+    <link rel="stylesheet" href="../styles.css">
     <script src="exercicios.js" defer></script>
   </head>
   <body>
     <header>
+      
       <div id="burguinho">
         <img src="../assets/img/burguinho.svg" alt="" onclick="abrirMenu()" />
       </div>
@@ -17,294 +19,293 @@
       </p>
     </header>
     <div id="menu" class="escondido">
-      <ul>
-        <li><a href="/DockerMap/index.html">HOME</a></li>
-        <li><a href="/Exercicios/exercicios.html">EXERCÍCIOS</a></li>
-        <li><a href="/Comandos/comandos.html">CADERNO</a></li>
-      </ul>
-      <img src="../assets/img/whale.png" alt="" class="whalemenu" />
-    </div>
-    <div class="meio">
-      <h1>Exercícios</h1>
-      <h2>Vamos testar os seus conhecimentos sobre os comandos de Docker!</h2>
-
-      <img src="../assets/img/scriptImage.svg" alt="" id="imagem" />
-
-      <h2 id="h2">
-        Dica: Arraste e Solte os comandos para responder as alternativas!
-      </h2>
-
-      <div class="secao">
-        <h3>
-          Questão 1 - Organize os comandos para efetuar a criação de uma imagem
-          do Postgres
-        </h3>
+        <ul>
+          <li><a href="/LandingPage/index.html">HOME</a></li>
+          <li><a href="/DockerMap/dockermap.html">DOCKERMAP</a></li>
+          <li><a href="/Exercicios/exercicios.html">EXERCÍCIOS</a></li>
+          <li><a href="/Comandos/comandos.html">CADERNO</a></li>
+        </ul>
+        <img src="../assets/img/whale.png" alt="" class="whalemenu" />
       </div>
-
-      <div id="questao1">
-        <div id="box1" class="box-drop" dropzone="true">
-          <div class="box-line">
-            <img id="seta" src="Arrow 1.png" alt="seta" />
-            <div id="comand1" class="box-comand"></div>
+    <main>
+      
+      <div class="meio">
+        <h1>Exercícios</h1>
+        <h2>Vamos testar os seus conhecimentos sobre os comandos de Docker!</h2>
+        <img src="../assets/img/scriptImage.svg" alt="" id="imagem" />
+        <h2 id="h2">
+          Dica: Arraste e Solte os comandos para responder as alternativas!
+        </h2>
+        <div id="enunciado1" class="secao">
+          <h3 >
+            Questão 1 - Organize os comandos para efetuar a criação de uma imagem
+            do Postgres
+            <br> <span style="display: flex; font-size: 12px; justify-content: center;">Acesse o counteúdo em: <a href="/Imagem, Contêiner e Hub/imageconteinerdockerhub.html"><strong style="margin-left: 10px; color: #004779; font-size: 12px;">Imagem, Contêiner e Docker Hub</strong></a></span>
+          </h3>
+        </div>
+        <div id="questao1">
+          <div id="box1" class="box-drop" dropzone="true">
+            <div class="box-line">
+              <img id="seta" src="Arrow 1.png" alt="seta" />
+              <div id="comand1" class="box-comand"></div>
+            </div>
+            <div class="line"></div>
           </div>
-          <div class="line"></div>
-        </div>
-        <div id="box-option-1" class="box-options">
-          <div id="postgres" class="option" draggable="true">postgres</div>
-          <div id="pull1" class="option" draggable="true">pull</div>
-          <div id="docker1" class="option" draggable="true">docker</div>
-        </div>
-        <div class="box-btn">
-          <button id="btn1" class="btn-answer" onclick="checkAnswer(event)">
-            Responder
-          </button>
-          <img
-            id="reload1"
-            class="imageReload"
-            onclick="reloadAnswer(event)"
-            src="../assets/img/reload.png"
-            alt="reload"
-          />
-        </div>
-      </div>
-
-      <div class="secao">
-        <h3>
-          Questão 2 - Como inicializar um contêiner chamado “py” com a imagem do
-          Python 3.9?
-        </h3>
-      </div>
-
-      <div id="questao2">
-        <div id="box2" class="box-drop" dropzone="true">
-          <div class="box-line3">
-            <img id="seta" src="Arrow 1.png" alt="seta" />
-            <div id="comand2" class="box-comand"></div>
+          <div id="box-option-1" class="box-options">
+            <div id="postgres" class="option" draggable="true">postgres</div>
+            <div id="pull1" class="option" draggable="true">pull</div>
+            <div id="docker1" class="option" draggable="true">docker</div>
           </div>
-          <div class="line3"></div>
-        </div>
-        <div id="box-option-2" class="box-options">
-          <div id="--name" class="option" draggable="true">--name</div>
-          <div id="-it" class="option" draggable="true">-it</div>
-          <div id="bash" class="option" draggable="true">bash</div>
-          <div id="py" class="option" draggable="true">py</div>
-          <div id="python" class="option" draggable="true">python:3.9</div>
-          <div id="dockerun" class="option" draggable="true">docker run</div>
-        </div>
-        <div class="box-btn">
-          <button id="btn2" class="btn-answer" onclick="checkAnswer(event)">
-            Responder
-          </button>
-          <img
-            id="reload2"
-            class="imageReload"
-            onclick="reloadAnswer(event)"
-            src="../assets/img/reload.png"
-            alt="reload"
-          />
-        </div>
-      </div>
-
-      <div class="secao">
-        <h3>Questão 3 - Como posso rodar um docker-compose?</h3>
-      </div>
-
-      <div id="questao3">
-        <div id="box3" class="box-drop" dropzone="true">
-          <div class="box-line">
-            <img id="seta" src="Arrow 1.png" alt="seta" />
-            <div id="comand3" class="box-comand"></div>
-          </div>
-          <div class="line"></div>
-        </div>
-        <div id="box-option-3" class="box-options">
-          <div id="docker-compose" class="option" draggable="true">
-            docker-compose
-          </div>
-          <div id="up" class="option" draggable="true">up</div>
-        </div>
-        <div class="box-btn">
-          <button id="btn3" class="btn-answer" onclick="checkAnswer(event)">
-            Responder
-          </button>
-          <img
-            id="reload3"
-            class="imageReload"
-            onclick="reloadAnswer(event)"
-            src="../assets/img/reload.png"
-            alt="reload"
-          />
-        </div>
-      </div>
-
-      <div class="secao">
-        <h3>Questão 4 - Como posso subir minha imagem no DockerHub?</h3>
-      </div>
-
-      <div id="questao4">
-        <div id="box4" class="box-drop" dropzone="true">
-          <div class="box-line2">
-            <img id="seta" src="Arrow 1.png" alt="seta" />
-            <div id="comand4" class="box-comand"></div>
-          </div>
-          <div class="line2"></div>
-        </div>
-        <div id="box-option-4" class="box-options">
-          <div id="docker2" class="option" draggable="true">docker</div>
-          <div id="username/" class="option" draggable="true">userName/</div>
-          <div id="push" class="option" draggable="true">push</div>
-          <div id="repositoryName:1.0 1" class="option" draggable="true">
-            repositoryName:1.0
+          <div class="box-btn">
+            <button id="btn1" class="btn-answer" onclick="checkAnswer(event)">
+              Responder
+            </button>
+            <img
+              id="reload1"
+              class="imageReload"
+              onclick="reloadAnswer(event)"
+              src="../assets/img/reload.png"
+              alt="reload"
+            />
           </div>
         </div>
-        <div class="box-btn">
-          <button id="btn4" class="btn-answer" onclick="checkAnswer(event)">
-            Responder
-          </button>
-          <img
-            id="reload4"
-            class="imageReload"
-            onclick="reloadAnswer(event)"
-            src="../assets/img/reload.png"
-            alt="reload"
-          />
+        <div id="enunciado2" class="secao">
+          <h3 >
+            Questão 2 - Como inicializar um contêiner chamado “py” com a imagem do
+            Python 3.9?
+            <br> <span style="display: flex; font-size: 12px; justify-content: center;">Acesse o counteúdo em: <a href="/Imagem, Contêiner e Hub/imageconteinerdockerhub.html"><strong style="margin-left: 10px; color: #004779; font-size: 12px;">Imagem, Contêiner e Docker Hub</strong></a></span>
+          </h3>
         </div>
-      </div>
-
-      <div class="secao">
-        <h3>Questão 5 - Como posso logar no DockerHub?</h3>
-      </div>
-
-      <div id="questao5">
-        <div id="box5" class="box-drop" dropzone="true">
-          <div class="box-line">
-            <img id="seta" src="Arrow 1.png" alt="seta" />
-            <div id="comand5" class="box-comand"></div>
+        <div id="questao2">
+          <div id="box2" class="box-drop" dropzone="true">
+            <div class="box-line3">
+              <img id="seta" src="Arrow 1.png" alt="seta" />
+              <div id="comand2" class="box-comand"></div>
+            </div>
+            <div class="line3"></div>
           </div>
-          <div class="line"></div>
-        </div>
-        <div id="box-option-5" class="box-options">
-          <div id="docker3" class="option" draggable="true">docker</div>
-          <div id="login" class="option" draggable="true">login</div>
-          <div id="docker.io" class="option" draggable="true">docker.io</div>
-        </div>
-        <div class="box-btn">
-          <button id="btn5" class="btn-answer" onclick="checkAnswer(event)">
-            Responder
-          </button>
-          <img
-            id="reload5"
-            class="imageReload"
-            onclick="reloadAnswer(event)"
-            src="../assets/img/reload.png"
-            alt="reload"
-          />
-        </div>
-      </div>
-
-      <div class="secao">
-        <h3>
-          Questão 6 - Como posso criar uma imagem a partir de um dockerfile?
-        </h3>
-      </div>
-
-      <div id="questao6">
-        <div id="box6" class="box-drop" dropzone="true">
-          <div class="box-line2">
-            <img id="seta" src="Arrow 1.png" alt="seta" />
-            <div id="comand6" class="box-comand"></div>
+          <div id="box-option-2" class="box-options">
+            <div id="--name" class="option" draggable="true">--name</div>
+            <div id="-it" class="option" draggable="true">-it</div>
+            <div id="bash" class="option" draggable="true">bash</div>
+            <div id="py" class="option" draggable="true">py</div>
+            <div id="python" class="option" draggable="true">python:3.9</div>
+            <div id="dockerun" class="option" draggable="true">docker run</div>
           </div>
-          <div class="line2"></div>
-        </div>
-        <div id="box-option-6" class="box-options">
-          <div id="ponto" class="option" draggable="true">.</div>
-          <div id="-t" class="option" draggable="true">-t</div>
-          <div id="docker" class="option" draggable="true">docker</div>
-          <div id="build" class="option" draggable="true">build</div>
-          <div id="imageName" class="option" draggable="true">imageName</div>
-        </div>
-        <div class="box-btn">
-          <button id="btn6" class="btn-answer" onclick="checkAnswer(event)">
-            Responder
-          </button>
-          <img
-            id="reload6"
-            class="imageReload"
-            onclick="reloadAnswer(event)"
-            src="../assets/img/reload.png"
-            alt="reload"
-          />
-        </div>
-      </div>
-
-      <div class="secao">
-        <h3>Questão 7 - Como posso remover uma imagem?</h3>
-      </div>
-
-      <div id="questao7">
-        <div id="box7" class="box-drop" dropzone="true">
-          <div class="box-line">
-            <img id="seta" src="Arrow 1.png" alt="seta" />
-            <div id="comand7" class="box-comand"></div>
+          <div class="box-btn">
+            <button id="btn2" class="btn-answer" onclick="checkAnswer(event)">
+              Responder
+            </button>
+            <img
+              id="reload2"
+              class="imageReload"
+              onclick="reloadAnswer(event)"
+              src="../assets/img/reload.png"
+              alt="reload"
+            />
           </div>
-          <div class="line"></div>
         </div>
-        <div id="box-option-7" class="box-options">
-          <div id="rmi" class="option" draggable="true">rmi</div>
-          <div id="docker4" class="option" draggable="true">docker</div>
-          <div id="imageID" class="option" draggable="true">imageID</div>
+        <div id="enunciado3" class="secao">
+          <h3 >Questão 3 - Como posso rodar um docker-compose?
+            <br> <span style="display: flex; font-size: 12px; justify-content: center;">Acesse o counteúdo em: <a href="/DockerCompose/dockercompose.html"><strong style="margin-left: 10px; color: #004779; font-size: 12px;">Docker-Compose</strong></a></span>
+          </h3>
         </div>
-        <div class="box-btn">
-          <button id="btn7" class="btn-answer" onclick="checkAnswer(event)">
-            Responder
-          </button>
-          <img
-            id="reload7"
-            class="imageReload"
-            onclick="reloadAnswer(event)"
-            src="../assets/img/reload.png"
-            alt="reload"
-          />
-        </div>
-      </div>
-
-      <div class="secao">
-        <h3>Questão 8 - Como posso baixar uma imagem do DockerHub?</h3>
-      </div>
-
-      <div id="questao8">
-        <div id="box8" class="box-drop" dropzone="true">
-          <div class="box-line2">
-            <img id="seta" src="Arrow 1.png" alt="seta" />
-            <div id="comand8" class="box-comand"></div>
+        <div id="questao3">
+          <div id="box3" class="box-drop" dropzone="true">
+            <div class="box-line">
+              <img id="seta" src="Arrow 1.png" alt="seta" />
+              <div id="comand3" class="box-comand"></div>
+            </div>
+            <div class="line"></div>
           </div>
-          <div class="line2"></div>
-        </div>
-        <div id="box-option-8" class="box-options">
-          <div id="repositoryName:1.0 2" class="option" draggable="true">
-            repositoryName:1.0
+          <div id="box-option-3" class="box-options">
+            <div id="docker-compose" class="option" draggable="true">
+              docker-compose
+            </div>
+            <div id="up" class="option" draggable="true">up</div>
           </div>
-          <div id="docker5" class="option" draggable="true">docker</div>
-          <div id="pull2" class="option" draggable="true">pull</div>
-          <div id="username/2" class="option" draggable="true">userName/</div>
+          <div class="box-btn">
+            <button id="btn3" class="btn-answer" onclick="checkAnswer(event)">
+              Responder
+            </button>
+            <img
+              id="reload3"
+              class="imageReload"
+              onclick="reloadAnswer(event)"
+              src="../assets/img/reload.png"
+              alt="reload"
+            />
+          </div>
         </div>
-        <div class="box-btn">
-          <button id="btn8" class="btn-answer" onclick="checkAnswer(event)">
-            Responder
-          </button>
-          <img
-            id="reload8"
-            class="imageReload"
-            onclick="reloadAnswer(event)"
-            src="../assets/img/reload.png"
-            alt="reload"
-          />
+        <div id="enunciado4" class="secao">
+          <h3 >Questão 4 - Como posso subir minha imagem no DockerHub?
+            <br> <span style="display: flex; font-size: 12px; justify-content: center;">Acesse o counteúdo em: <a href="/Imagem, Contêiner e Hub/imageconteinerdockerhub.html"><strong style="margin-left: 10px; color: #004779; font-size: 12px;">Imagem, Contêiner e Docker Hub</strong></a></span>
+          </h3>
+        </div>
+        <div id="questao4">
+          <div id="box4" class="box-drop" dropzone="true">
+            <div class="box-line2">
+              <img id="seta" src="Arrow 1.png" alt="seta" />
+              <div id="comand4" class="box-comand"></div>
+            </div>
+            <div class="line2"></div>
+          </div>
+          <div id="box-option-4" class="box-options">
+            <div id="docker2" class="option" draggable="true">docker</div>
+            <div id="username/" class="option" draggable="true">userName/</div>
+            <div id="push" class="option" draggable="true">push</div>
+            <div id="repositoryName:1.0 1" class="option" draggable="true">
+              repositoryName:1.0
+            </div>
+          </div>
+          <div class="box-btn">
+            <button id="btn4" class="btn-answer" onclick="checkAnswer(event)">
+              Responder
+            </button>
+            <img
+              id="reload4"
+              class="imageReload"
+              onclick="reloadAnswer(event)"
+              src="../assets/img/reload.png"
+              alt="reload"
+            />
+          </div>
+        </div>
+        <div id="enunciado5" class="secao">
+          <h3 >Questão 5 - Como posso logar no DockerHub?
+            <br> <span style="display: flex; font-size: 12px; justify-content: center;">Acesse o counteúdo em: <a href="/Imagem, Contêiner e Hub/imageconteinerdockerhub.html"><strong style="margin-left: 10px; color: #004779; font-size: 12px;">Imagem, Contêiner e Docker Hub</strong></a></span>
+          </h3>
+        </div>
+        <div id="questao5">
+          <div id="box5" class="box-drop" dropzone="true">
+            <div class="box-line">
+              <img id="seta" src="Arrow 1.png" alt="seta" />
+              <div id="comand5" class="box-comand"></div>
+            </div>
+            <div class="line"></div>
+          </div>
+          <div id="box-option-5" class="box-options">
+            <div id="docker3" class="option" draggable="true">docker</div>
+            <div id="login" class="option" draggable="true">login</div>
+            <div id="docker.io" class="option" draggable="true">docker.io</div>
+          </div>
+          <div class="box-btn">
+            <button id="btn5" class="btn-answer" onclick="checkAnswer(event)">
+              Responder
+            </button>
+            <img
+              id="reload5"
+              class="imageReload"
+              onclick="reloadAnswer(event)"
+              src="../assets/img/reload.png"
+              alt="reload"
+            />
+          </div>
+        </div>
+        <div id="enunciado6" class="secao">
+          <h3 >
+            Questão 6 - Como posso criar uma imagem a partir de um dockerfile?
+            <br> <span style="display: flex; font-size: 12px; justify-content: center;">Acesse o counteúdo em: <a href="/Dockerfile/dockerfilepage.html"><strong style="margin-left: 10px; color: #004779; font-size: 12px;">DockerFile</strong></a></span>
+          </h3>
+        </div>
+        <div id="questao6">
+          <div id="box6" class="box-drop" dropzone="true">
+            <div class="box-line2">
+              <img id="seta" src="Arrow 1.png" alt="seta" />
+              <div id="comand6" class="box-comand"></div>
+            </div>
+            <div class="line2"></div>
+          </div>
+          <div id="box-option-6" class="box-options">
+            <div id="ponto" class="option" draggable="true">.</div>
+            <div id="-t" class="option" draggable="true">-t</div>
+            <div id="docker" class="option" draggable="true">docker</div>
+            <div id="build" class="option" draggable="true">build</div>
+            <div id="imageName" class="option" draggable="true">imageName</div>
+          </div>
+          <div class="box-btn">
+            <button id="btn6" class="btn-answer" onclick="checkAnswer(event)">
+              Responder
+            </button>
+            <img
+              id="reload6"
+              class="imageReload"
+              onclick="reloadAnswer(event)"
+              src="../assets/img/reload.png"
+              alt="reload"
+            />
+          </div>
+        </div>
+        <div id="enunciado7" class="secao">
+          <h3 >Questão 7 - Como posso remover uma imagem?
+            <br> <span style="display: flex; font-size: 12px; justify-content: center;">Acesse o counteúdo em: <a href="/Imagem, Contêiner e Hub/imageconteinerdockerhub.html"><strong style="margin-left: 10px; color: #004779; font-size: 12px;">Imagem, Contêiner e Docker Hub</strong></a></span>
+          </h3>
+        </div>
+        <div id="questao7">
+          <div id="box7" class="box-drop" dropzone="true">
+            <div class="box-line">
+              <img id="seta" src="Arrow 1.png" alt="seta" />
+              <div id="comand7" class="box-comand"></div>
+            </div>
+            <div class="line"></div>
+          </div>
+          <div id="box-option-7" class="box-options">
+            <div id="rmi" class="option" draggable="true">rmi</div>
+            <div id="docker4" class="option" draggable="true">docker</div>
+            <div id="imageID" class="option" draggable="true">imageID</div>
+          </div>
+          <div class="box-btn">
+            <button id="btn7" class="btn-answer" onclick="checkAnswer(event)">
+              Responder
+            </button>
+            <img
+              id="reload7"
+              class="imageReload"
+              onclick="reloadAnswer(event)"
+              src="../assets/img/reload.png"
+              alt="reload"
+            />
+          </div>
+        </div>
+        <div id="enunciado8" class="secao">
+          <h3 >Questão 8 - Como posso baixar uma imagem do DockerHub?
+            <br> <span style="display: flex; font-size: 12px; justify-content: center;">Acesse o counteúdo em: <a href="/Imagem, Contêiner e Hub/imageconteinerdockerhub.html"><strong style="margin-left: 10px; color: #004779; font-size: 12px;">Imagem, Contêiner e Docker Hub</strong></a></span>
+          </h3>
+        </div>
+        <div id="questao8">
+          <div id="box8" class="box-drop" dropzone="true">
+            <div class="box-line2">
+              <img id="seta" src="Arrow 1.png" alt="seta" />
+              <div id="comand8" class="box-comand"></div>
+            </div>
+            <div class="line2"></div>
+          </div>
+          <div id="box-option-8" class="box-options">
+            <div id="repositoryName:1.0 2" class="option" draggable="true">
+              repositoryName:1.0
+            </div>
+            <div id="docker5" class="option" draggable="true">docker</div>
+            <div id="pull2" class="option" draggable="true">pull</div>
+            <div id="username/2" class="option" draggable="true">userName/</div>
+          </div>
+          <div class="box-btn">
+            <button id="btn8" class="btn-answer" onclick="checkAnswer(event)">
+              Responder
+            </button>
+            <img
+              id="reload8"
+              class="imageReload"
+              onclick="reloadAnswer(event)"
+              src="../assets/img/reload.png"
+              alt="reload"
+            />
+          </div>
+        </div>
+        <div id="footer">
+          <p>GoDocker! - Exercícios</p>
         </div>
       </div>
-
-      <footer>
-        <p>GoDocker! - Exercicios</p>
-      </footer>
-    </div>
+    </main>
+    
   </body>
 </html>

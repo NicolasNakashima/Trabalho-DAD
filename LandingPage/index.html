@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page</title>
+    <title>GoDocker! - Página Inicial</title>
 
     <link rel="stylesheet" href="style.css" />
+    <script defer src="./script.js"></script>
     <link
       rel="shortcut icon"
       href="/assets/img/godocker.svg"
@@ -15,25 +16,41 @@
   </head>
   <body style="background-color: white">
     <header>
-      <p>G<span>o</span>D<span>o</span>cker!</p>
+      <div id="burguinho">
+        <img src="../assets/img/burguinho.svg" alt="" onclick="abrirMenu()" />
+      </div>
+      <p>
+        G<span>o</span>D<span>o</span>cker!</a>
+      </p>
     </header>
+    <div id="menu" class="escondido">
+      <ul>
+        <li><a href="/LandingPage/index.html">HOME</a></li>
+        <li><a href="/DockerMap/dockermap.html">DOCKERMAP</a></li>
+        <li><a href="/Exercicios/exercicios.html">EXERCÍCIOS</a></li>
+        <li><a href="/Comandos/comandos.html">CADERNO</a></li>
+      </ul>
+    </div>
+
     <main>
-      <div id="topo">
-        <img src="../assets/img/LPfundo.svg" alt="" />
-        <img src="../assets/img/godocker.svg" alt="" id="godocker" />
-        <p id="bv">Olá, <span>Usuário</span>!<br />Boas-vindas ao</p>
-        <p id="do">
-          Seu guia definitivo sobre o básico de <br /><span>docker!</span>
-        </p>
-        <a href="/DockerMap/index.html"
-          ><button id="comecar">Começar a aprender!</button></a
-        >
+      <div class="div-center">
+        <div id="topo">
+          <img src="../assets/img/LPfundo.svg" alt="" />
+          <img src="../assets/img/godocker.svg" alt="" id="godocker" />
+          <p id="bv">Olá, <span>Usuário</span>!<br />Boas-vindas ao</p>
+          <p id="do">
+            Seu guia definitivo sobre o básico de <br /><span>docker!</span>
+          </p>
+          <a href="/DockerMap/dockermap.html"
+            ><button id="comecar">Começar a aprender!</button></a
+          >
+        </div>
       </div>
       <div id="meio">
         <h2>Sobre o <span class="jua">GoDocker!</span></h2>
         <br />
         <div id="sobre-godocker">
-          <p>
+          <p id="pSobreGoDocker">
             O GoDocker! entrega a você a mais forma
             <span class="destaque">eficaz e fácil</span> de aprender sobre essa
             tecnologia essencial no dia a dia dos desenvolvedores. Nosso
@@ -96,10 +113,22 @@
           ter o Docker<br />Desktop instalado. Para isso fizemos um<br />pequeno
           tutorial de como você pode fazer isso.
         </p>
-        <a href=""
+        <a href="https://www.youtube.com/watch?v=HdW2BMRBDZ8" target="_blank"
           ><button><strong>Instalar o Dockerdesktop</strong></button></a
         >
+        <!-- <p>MacOS</p>
+        <p>Windows</p>
+        <p>Linux</p> -->
         <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      </div>
+      <div id="div-sop">
+        <p style="font-size: 24px;">Selecione o seu Sistema Operacional e faça o download!</p>
+        <a href="https://desktop.docker.com/mac/main/amd64/Docker.dmg?utm_source=docker&utm_medium=webreferral&utm_campaign=dd-smartbutton&utm_location=module&_gl=1*1ecga75*_gcl_au*MTA4MTE2NDQwLjE3MTU4MDYzNTc.*_ga*ODU5NjMxODAwLjE3MTU4MDYzNTg.*_ga_XJWPQMJYHQ*MTcxODMxMjA3Ny45LjEuMTcxODMxMjA4MC41Ny4wLjA.">
+          <p class="sop" dowload="">MacOS</p>
+        </a>
+        <a href="https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe?utm_source=docker&utm_medium=webreferral&utm_campaign=dd-smartbutton&utm_location=module&_gl=1*1nthkby*_gcl_au*MTA4MTE2NDQwLjE3MTU4MDYzNTc.*_ga*ODU5NjMxODAwLjE3MTU4MDYzNTg.*_ga_XJWPQMJYHQ*MTcxODMxMjA3Ny45LjEuMTcxODMxMjA4MC41Ny4wLjA.">
+          <p class="sop">Windows</p>
+        </a>
       </div>
     </main>
     <footer>
