@@ -81,7 +81,7 @@ setTimeout(() => {
   // }
   for (let i = 0; i < 4; i++) {
     if (localStorage.getItem("verificacao" + tema) == 0) {
-      document.documentElement.classList.add("disabled_body");
+      // document.documentElement.classList.add("disabled_body");
       enviar.classList.add("disabled_button");
       console.log("djskdjs");
     }
