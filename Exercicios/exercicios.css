@@ -37,20 +37,6 @@ header {
 header span {
   color: #adddff;
 }
-#burguinho {
-  position: absolute;
-  height: 78px;
-  width: 78px;
-  left: 7px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#burguinho img {
-  width: 46.5px;
-  height: 31px;
-  cursor: pointer;
-}
 .meio {
   display: flex;
   align-items: center;
@@ -108,49 +94,6 @@ h2 {
   position: relative;
   width: min-content;
   height: min-content;
-}
-
-#menu {
-  width: 20%;
-  height: 100vh;
-  background-color: #fff;
-  position: fixed;
-  z-index: 7;
-  top: 0;
-  transition: 0.5s;
-  display: block;
-}
-
-#menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#menu li {
-  width: 100%;
-  height: 10%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 2px dashed black;
-}
-
-#menu a {
-  text-decoration: none;
-  color: black;
-  font-family: regular;
-}
-.escondido {
-  left: -20%;
-}
-.aparecido {
-  left: 0;
 }
 
 * {
@@ -337,17 +280,6 @@ h2 {
   cursor: pointer;
 }
 
-footer {
-  margin: 0;
-  width: 100%;
-  background-color: #198ce0;
-  color: #ffffff;
-  font-family: "Jua";
-  text-align: center;
-  font-size: 24px;
-  padding: 5px;
-}
-
 a {
   color: inherit;
   text-decoration: none;
@@ -362,3 +294,22 @@ a:active {
   color: inherit;
   text-decoration: none;
 }
+
+main {
+  height: fit-content;
+}
+
+#footer {
+  margin: 0;
+  height: 40px;
+  width: 100%;
+  background-color: #198ce0;
+  color: #ffffff;
+  font-family: "Jua";
+  text-align: center;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
