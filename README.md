@@ -1,6 +1,6 @@
 # GoDocker!
 
-![Docker](https://www.docker.com/sites/default/files/d8/2019-07/Moby-logo.png)
+![Docker](https://miro.medium.com/v2/resize:fit:336/0*rmv6pZTW2hfP2XYd.png)
 
 ## Descrição
 
