@@ -181,12 +181,7 @@ footer p {
   font-family: regular;
   font-size: 16px;
 }
-#ultima::after {
-  position: absolute;
-  content: url(../assets/img/interrogacao.svg);
-  bottom: 280px;
-  right: 400px;
-}
+
 button {
   width: 600px;
   height: 112px;
@@ -222,12 +217,10 @@ button:hover {
 }
 
 #div-sop {
-  position: absolute;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin-left: 200px;
-  bottom: -2825px;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
 #div-sop .sop {

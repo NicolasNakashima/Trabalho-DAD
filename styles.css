@@ -31,7 +31,7 @@ main h1 {
   width: 40%;
 }
 
-#DockerComposeLine{
+#DockerComposeLine {
   width: 90%;
 }
 
@@ -382,7 +382,8 @@ form div {
   width: 80%;
 }
 
-#enviar {
+#enviar,
+#reiniciar {
   margin: auto;
   margin-top: 1rem;
   display: block;
@@ -600,12 +601,11 @@ input[type="text"]:focus {
   align-items: center;
 }
 
-li{
+li {
   font-family: "Poppins-regular";
 }
 
 #menu li {
-  
   width: 100%;
   height: 10%;
   display: flex;

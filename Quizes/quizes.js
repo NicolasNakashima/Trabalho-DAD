@@ -2,6 +2,7 @@ const id = document.getElementById("tema");
 const tema = id.textContent.split(" ")[1];
 const enviar = document.getElementById("enviar");
 const pontos = document.getElementById("pontos");
+const reiniciar = document.getElementById("reiniciar");
 
 console.log(tema);
 console.log(pontos.textContent);
@@ -64,26 +65,26 @@ enviar.addEventListener("click", (event) => {
       localStorage.setItem("verificacao4", JSON.stringify(0));
     }
 
-    // document.documentElement.classList.add("disabled_body");
-    // document.documentElement.classList.add("");
     enviar.classList.add("disabled_button");
   }
 });
 
 setTimeout(() => {
   console.log(localStorage.getItem("verificacao1"));
-  //implementar lógica
 
-  // if (localStorage.getItem("verificacao1") == 0) {
-  //   document.documentElement.classList.add("disabled_body");
-  //   enviar.classList.add("disabled_button");
-  //   console.log("djskdjs");
-  // }
   for (let i = 0; i < 4; i++) {
     if (localStorage.getItem("verificacao" + tema) == 0) {
-      document.documentElement.classList.add("disabled_body");
+      pontos.textContent = "Pontos: " + pontuacao;
+      pontos.classList.remove("invisivel");
       enviar.classList.add("disabled_button");
-      console.log("djskdjs");
     }
   }
 }, 1);
+
+reiniciar.addEventListener("click", (event) => {
+  event.preventDefault();
+  pontuacao = 0;
+  pontos.textContent = "Pontos: " + pontuacao;
+  enviar.classList.remove("disabled_button");
+  localStorage.removeItem("verificacao" + tema);
+});
