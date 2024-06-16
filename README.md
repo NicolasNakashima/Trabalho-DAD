@@ -4,7 +4,7 @@
 
 ## Descrição
 
-O **GoDocker!** entrega a você a forma mais eficaz e fácil de aprender sobre essa tecnologia essencial no dia a dia dos desenvolvedores. Nosso objetivo é que você saia de cada sessão de aprendizado entendendo o conteúdo de maneira dinâmica. Para facilitar a compreensão dos assuntos, contamos com exercícios gamificados para cada conteúdo lecionado.
+O **GoDocker!** entrega a você a forma mais eficaz e fácil de aprender sobre essa tecnologia essencial no dia a dia dos desenvolvedores. Nosso objetivo é que você saia de cada sessão de aprendizado entendendo o conteúdo de maneira dinâmica. Para facilitar a compreensão dos assuntos, contamos com exercícios para cada conteúdo lecionado.
 
 ## Desenvolvimento
 
