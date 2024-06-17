@@ -1,0 +1,628 @@
+@font-face {
+    font-family: "Jua";
+    src: url(../Jua-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: "Poppins-regular";
+    src: url(../Poppins/Poppins-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: "Poppins-bold";
+    src: url(../Poppins/Poppins-Bold.ttf);
+  }
+  
+  body {
+    margin: 0;
+    background: linear-gradient(to bottom, #ffffff, #adddff, #adddff);
+    background-repeat: no-repeat;
+  }
+  
+  main h1 {
+    color: #004779;
+  }
+  
+  #docker-logo {
+    width: 20%;
+  }
+  
+  #godocker {
+    width: 40%;
+  }
+  
+  #DockerComposeLine {
+    width: 90%;
+  }
+  
+  #docker-logo:hover {
+    width: 23%;
+    transition: width 0.3s ease;
+    cursor: pointer;
+  }
+  
+  #docker-logo:not(:hover) {
+    transition: width 0.3s ease;
+    width: 20%;
+  }
+  
+  #docker-icon-topic {
+    position: relative;
+    top: 7px;
+    margin: 0px 5px;
+    width: 40px;
+  }
+  
+  #aplicacao-exemplo {
+    margin: 20px 0;
+    width: 80%;
+  }
+  
+  main {
+    font-family: "Poppins-regular";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #212121;
+  }
+  
+  strong {
+    font-family: "Poppins-bold";
+    color: #198ce0;
+  }
+  
+  .conteudo-box {
+    width: 50%;
+    background-color: #d1ecff;
+    margin: 20px;
+    margin-top: 1px;
+    border-radius: 20px;
+  
+    padding: 40px;
+    border: 1px solid #198ce0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 10px rgba(0, 71, 121, 0.3);
+  }
+  
+  .titulo-topicos {
+    width: 50%;
+    text-align: center;
+    border-radius: 20px;
+    user-select: none;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: white;
+    border: 1px solid #198ce0;
+    padding: 10px 25px;
+    box-shadow: 1px 1px 10px rgba(0, 71, 121, 0.3);
+  }
+  
+  #imagem-icon,
+  #conteiner-icon {
+    position: relative;
+    top: 10px;
+    margin: 0px 5px;
+    width: 40px;
+  }
+  
+  #dockerhub-icon {
+    position: relative;
+    top: 3px;
+    margin: 0px 5px;
+    width: 50px;
+  }
+  
+  .titulo-topicos:hover {
+    background-color: #adddff;
+    transition: background-color 0.5s ease;
+  }
+  
+  .titulo-topicos:not(:hover) {
+    transition: background-color 0.3s ease;
+    background-color: white;
+  }
+  
+  .titulo-topicos h1 {
+    font-size: 28px;
+    font-family: "Poppins-bold";
+    color: #198ce0;
+    display: inline-block;
+  }
+  
+  #engrenagemicon,
+  #pensative-icon {
+    position: relative;
+    top: 10px;
+    margin: 0px 5px;
+    width: 40px;
+  }
+  
+  .conteudo-box div {
+    display: block;
+  }
+  
+  .invisivel {
+    display: none;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li p {
+    display: inline;
+  }
+  
+  /* #wavetest{
+      width: 100%;
+      position: absolute;
+      top: 200%;
+      opacity: 0.4;
+      z-index: -1;
+  } */
+  
+  .ocean {
+    height: 50%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    bottom: 0;
+    opacity: 0.8;
+  }
+  
+  .vocabulario-aprendido {
+    background-color: #198ce0;
+    color: white;
+    width: 50%;
+    padding: 20px;
+    border: 1px solid #adddff;
+    border-radius: 20px;
+  }
+  
+  .vocabulario-aprendido div {
+    margin-bottom: 15px;
+  }
+  
+  .vocabulario-aprendido h2 {
+    display: inline;
+    font-family: "Poppins-bold";
+  }
+  
+  .vocabulario-aprendido ul {
+    color: #adddff;
+    font-family: "Poppins-bold";
+    font-size: 20px;
+  }
+  
+  .vocabulario-aprendido ul li {
+    margin-bottom: 10px;
+  }
+  .vocabulario-aprendido ul li:hover {
+    margin-bottom: 10px;
+    color: white;
+    transition: color 0.5s ease;
+    cursor: pointer;
+  }
+  
+  .vocabulario-aprendido ul li:not(hover) {
+    margin-bottom: 10px;
+    color: #adddff;
+    transition: color 0.2s ease;
+    font-size: 20px;
+  }
+  
+  .vocabulario-aprendido ul p {
+    font-family: "Jua";
+    font-size: 24px;
+  }
+  
+  #abc-icon {
+    position: relative;
+    top: 10px;
+    margin: 0px 5px;
+  
+    width: 40px;
+  }
+  
+  .fade-in {
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+  }
+  
+  #representacoes-ambientes {
+    margin-top: 20px;
+    display: flex;
+  }
+  
+  #representacoes-ambientes img {
+    width: 50%;
+  }
+  
+  footer {
+    margin: 0;
+    height: 40px;
+    background-color: #198ce0;
+    color: #ffffff;
+    font-family: "Jua";
+    text-align: center;
+    align-content: center;
+    font-size: 14px;
+  }
+  
+  header {
+    font-family: "Jua";
+    color: #ffffff;
+    background-color: #198ce0;
+    padding: 1px;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  header span {
+    color: #adddff;
+  }
+  
+  /* Estilização da página Imagem e Contêiner */
+  
+  #ocean-with-containers {
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    bottom: 0;
+  }
+  
+  #images-conteiner-image {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    width: 75%;
+    margin-bottom: 30px;
+  }
+  
+  #image-of-a-sus-whale {
+    width: 25%;
+  }
+  
+  #conteiner-docker:hover {
+    width: 37%;
+    transition: width 0.3s ease;
+    cursor: pointer;
+  }
+  
+  #conteiner-docker:not(:hover) {
+    transition: width 0.3s ease;
+    width: 35%;
+  }
+  
+  #image-of-a-sus-whale:hover {
+    width: 27%;
+    transition: width 0.3s ease;
+    cursor: pointer;
+  }
+  
+  #image-of-a-sus-whale:not(:hover) {
+    transition: width 0.3s ease;
+    width: 25%;
+  }
+  
+  .topicos-subtitulos {
+    font-size: 24px;
+    font-family: "Poppins-bold";
+    color: #198ce0;
+  }
+  
+  #aprenda-comandos {
+    color: #004779;
+    font-weight: bolder;
+    width: 35%;
+    text-align: center;
+    border-radius: 20px;
+    user-select: none;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: white;
+    border: 1px solid #198ce0;
+    padding: 10px 25px;
+    box-shadow: 1px 1px 10px rgba(0, 71, 121, 0.3);
+  }
+  
+  #imagemIA {
+    width: 50%;
+    border-radius: 20px;
+  }
+  
+  input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 4px solid #198ce0;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    border-radius: 200px;
+  }
+  
+  input[type="radio"]:checked {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 4px solid #198ce0;
+    background-color: #007bff;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    border-radius: 200px;
+  }
+  
+  form h3 {
+    background-color: #198ce0;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+  
+  .questao {
+    margin-bottom: 20px;
+  }
+  
+  form div {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    margin: auto;
+    width: 80%;
+  }
+  
+  #enviar,
+  #reiniciar {
+    margin: auto;
+    margin-top: 1rem;
+    display: block;
+    padding: 20px;
+    border: none;
+    background-color: #007bff;
+    border-radius: 6px;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  #enviar:hover {
+    background-color: #005b9d;
+    transition: background-color 0.5s ease;
+  }
+  
+  #enviar:not(:hover) {
+    transition: background-color 0.5s ease;
+  }
+  
+  #caderno-icon {
+    width: 200px;
+    margin: 20px;
+  }
+  
+  .conteudo-box h2 {
+    color: #005b9d;
+  }
+  
+  code {
+    background-color: rgb(194, 232, 255);
+    margin-top: 2px;
+    padding: 5px;
+  }
+  
+  .comando {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 30px;
+  
+    background-color: #c4e6ff;
+    padding: 10px;
+    border-radius: 7px;
+  }
+  
+  .comand-title {
+    color: #004779;
+    font-weight: bold;
+  }
+  
+  .example-command {
+    color: #005b9d;
+  }
+  
+  pesquisa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .area-quiz {
+    background-color: white;
+    width: 100%;
+    padding-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  .area-quiz div {
+    background-color: #198ce0;
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .area-quiz h4 {
+    color: #198ce0;
+    text-align: center;
+  }
+  
+  .area-quiz p {
+    text-align: center;
+  }
+  
+  .area-quiz span {
+    color: #198ce0;
+    font-weight: bold;
+  }
+  
+  .area-quiz .iniciar-teste {
+    background-color: #198ce0;
+    width: 30%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .inline-block {
+    display: inline-block;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: inherit;
+  }
+  
+  a:hover,
+  a:active {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .disabled_button {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .disabled_body {
+    cursor: not-allowed;
+    pointer-events: none;
+  
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  pesquisa {
+    margin: 20px;
+    background-color: #adddff;
+    border-radius: 10px;
+    border: 2px solid #198ce0;
+    padding: 20px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px; /* Adjust the value for desired border radius */
+    background-color: #198ce0; /* Blue background color */
+    color: white; /* White text color */
+    font-size: 16px;
+  }
+  
+  input[type="text"]::placeholder {
+    color: #ffffff; /* Placeholder color */
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(7, 94, 187, 0.7); /* Blue shadow on focus */
+  }
+  
+  #burguinho {
+    position: absolute;
+    height: 78px;
+    width: 78px;
+    left: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #burguinho img {
+    width: 46.5px;
+    height: 31px;
+    cursor: pointer;
+  }
+  #menu {
+    width: 20%;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    z-index: 7;
+    top: 0;
+    transition: 0.5s;
+    display: block;
+  }
+  
+  #menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  li {
+    font-family: "Poppins-regular";
+  }
+  
+  #menu li {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px dashed black;
+  }
+  
+  #menu a {
+    text-decoration: none;
+    color: black;
+    font-family: "regular";
+  }
+  .escondido {
+    left: -20%;
+  }
+  .aparecido {
+    left: 0;
+  }
+  
