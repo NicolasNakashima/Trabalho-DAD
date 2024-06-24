@@ -67,6 +67,7 @@ enviar.addEventListener("click", (event) => {
 
     enviar.classList.add("disabled_button");
   }
+  window.alert("Quiz finalizado! Veja sua pontuação voltando para cima.");
 });
 
 setTimeout(() => {
